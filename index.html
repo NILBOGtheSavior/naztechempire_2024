@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Naztech Empire</title>
+        <meta name="description" content="">
+                <meta charset="utf-8">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/menu.js"></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/slideshow.js"></script>
+    </head>
+    <body>
+        <div class="slim">
+            <header class="blur">
+    <a href="../index.html"><img src="img/logo.png" alt=""></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="applications.html">Applications</a>
+        <a href="downloads.html">Downloads</a>
+        <!-- <a href="#">Videos</a> -->
+        <a href="../blog.html">Blog</a>
+    </nav>
+    <div id="account_info">
+        <small><a href="#">Login</a></small>
+        <a>|</a>
+        <small><a href="#">Sign Up</a></small>
+    </div>
+    <div id="hamburger" onclick="toggleMenu();">
+        <div class="bun"></div>
+        <div class="bun"></div>
+        <div class="bun"></div>
+    </div>
+</header>
+<div id="hamburger_menu" class="blur">
+    <a href="index.html">Home</a>
+    <a href="applications.html">Applications</a>
+    <a href="downloads.html">Downloads</a>
+    <!-- <a href="#">Videos</a> -->
+    <a href="../blog.html">Blog</a>
+</div>
+        </div>
+        <main>
+            <div id="hero">
+                <div id="hero_image"></div>
+                <div id="hero_text">
+                    <h1>Welcome to Naztech Empire</h1>
+                </div>
+            </div>
+            <section>
+                <h2><a href="#">Applications &#11100;</a></h2>
+                <div id="applications">
+                    <a href="#" class="tile" style="background-image: url(img/projects/3dprinter.webp);">
+                        <div class="tile_wrap">
+                            <h3>3D Printer Utility</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam laudantium, dolores cumque exercitationem quae sunt!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="tile" style="background-image: url(img/projects/img_opt.jpg);">
+                        <div class="tile_wrap">
+                            <h3>Image Optimizer</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam laudantium, dolores cumque exercitationem quae sunt!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="tile" style="background-image: url(img/projects/flashcards.jpg);">
+                        <div class="tile_wrap">
+                            <h3>Flashcards</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam laudantium, dolores cumque exercitationem quae sunt!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="tile" style="background-image: url(img/projects/workout.jpg);">
+                        <div class="tile_wrap">
+                            <h3>PixelPulse</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam laudantium, dolores cumque exercitationem quae sunt!</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h2><a href="#">Downloads &#11100;</a></h2>
+                <div id="downloads">
+                    <div class="panel">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, nisi!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque illum reiciendis veniam aperiam libero fugit dolorum doloremque quia unde, nostrum dicta natus omnis laborum.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dolores in, odit, provident distinctio nam sint ea porro, culpa dignissimos optio. Dolore labore nisi amet quia, corporis nam ab illo esse rerum, nemo illum. Quis architecto nulla libero laborum sint? Ipsa quis sint rerum, totam quibusdam perspiciatis nihil voluptatibus eveniet?</p>
+                    </div>
+                    <div class="panel slideshow" id="slideshow">
+                        <div class="image" data-index="0" data-view="1" onclick="imgSelect(this);">
+                            <img src="img/artwork/slideshow/09.jpg" alt="">
+                        </div>
+                        <div class="image" data-index="1" data-view="2" onclick="imgSelect(this);">
+                            <img src="img/artwork/slideshow/07.jpg" alt="">
+                        </div>
+                        <div class="image" data-index="2" data-view="3" onclick="imgSelect(this);">
+                            <img src="img/artwork/slideshow/04.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2><a>Videos<!-- &#11100; --></a></h2>
+                <div class="videos">
+                    <div class="video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/Tp8tZgN1BFY?si=DVgSCg9fJ7Q2gY6W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto et fugit obcaecati deserunt minus sed nam vitae iusto perspiciatis! Quibusdam quasi repellendus at. Sint fugit magni vitae beatae dolorum, voluptas quo odit nihil tenetur. Illum repellendus quae quibusdam sapiente veniam. Earum in, ad consequuntur nam quos maxime pariatur odio dolorem!</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2><a href="blog.html">Blog &#11100;</a></h2>
+                <div class="blog">
+                    
+                    
+                    <a href="/custom_led_strips">
+                        <figure>
+                            <div style="background-image: url('img/blog/custom_led_strips.jpg');"></div>
+                            <figcaption>Illuminating Your Space: A Comprehensive Guide to LED Strips, Custom Soldering, and WLED</figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a href="/machine_learning_vs_deep_learning">
+                        <figure>
+                            <div style="background-image: url('img/blog/machine_learning_vs_deep_learning.jpg');"></div>
+                            <figcaption>The Evolution of Artificial Intelligence: From Machine Learning to Deep Learning</figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a href="/microcontrollers">
+                        <figure>
+                            <div style="background-image: url('img/blog/microcontrollers.jpg');"></div>
+                            <figcaption>Comparing Popular Microcontroller Platforms: Arduino vs. Raspberry Pi vs. ESP32</figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a href="/home_server">
+                        <figure>
+                            <div style="background-image: url('img/blog/home_server.jpg');"></div>
+                            <figcaption>Building Your Own Home Server: A Comprehensive Guide</figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a href="/secure_coding">
+                        <figure>
+                            <div style="background-image: url('img/blog/secure_coding.jpg');"></div>
+                            <figcaption>Writing Code that Stands Strong: An Introduction to Secure Coding Practices</figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a href="/ricing_linux">
+                        <figure>
+                            <div style="background-image: url('img/blog/ricing_linux.jpg');"></div>
+                            <figcaption>Unleashing Creativity: The Art of Linux Ricing</figcaption>
+                        </figure>
+                    </a>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+    <div class="directories">
+        <span id="leg">
+            <div>
+                <p id="asciimation"></p>
+            </div>
+            <p>Naztech Empire &copy; 2024</p>
+        </span>
+        <span>
+            <h4>Site Map</h4>
+            <a href="index.html"><p>Home</p></a>
+            <a href="applications.html"><p>Applications</p></a>
+            <a href="downloads.html"><p>Downloads</p></a>
+            <!-- <a href="#"><p>Videos</p></a> -->
+            <a href="blog.html"><p>Blog</p></a>
+        </span>
+        <span>
+            <h4>Social</h4>
+            <a href="#"><img src="img/icons/icons8-instagram.svg" alt=""></a>
+            <a href="#"><img src="img/icons/icons8-github.svg" alt=""></a>
+            <a href="#"><img src="img/icons/icons8-youtube.svg" alt=""></a>
+            <small>
+                <a href="#"><p><u>Terms and Conditions</u></p></a>
+                <a href="#"><p><u>Privacy Policy</u></p></a>
+            </small>
+            
+        </span>
+    </div>
+</footer>
+    </body>
+</html>

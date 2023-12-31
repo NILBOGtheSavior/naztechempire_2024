@@ -1,0 +1,81 @@
+h4 {
+    font-size: 1.25em;
+    flex: 1;
+}
+h5 {
+    color: grey;
+    text-align: end;
+    font-weight: 100;
+}
+h6 {
+    font-size: 0.8em;
+    color: grey;
+}
+
+#hero {
+    height: 250px;
+}
+
+#back_link p {
+    text-decoration: underline;
+    color: #ffa800;
+}
+
+@property --grad{
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+  }
+
+.post {
+    --grad:0%;
+    transition:--grad 500ms;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.75);
+    background: linear-gradient(0deg, rgba(128, 128, 128, 0.25) 0%, rgba(128, 128, 128, 0) var(--grad));
+}
+
+.post:hover {
+    border-bottom: solid 1px rgba(255, 168, 0, 0.75);
+    --grad:25%;
+}
+
+.post .thumbnail {
+    transition: 500ms;
+}
+
+.post:hover .thumbnail {
+    scale: 105%;
+}
+
+.info {
+    width: 100%;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+    aspect-ratio: 4/3;
+    display: inline-block;
+}
+
+.thumbnail img {
+    height: 100%;
+}
+
+#blog_info {
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#blog_info p {
+    display: inline;
+}
