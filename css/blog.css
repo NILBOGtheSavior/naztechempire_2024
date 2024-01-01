@@ -79,3 +79,36 @@ h6 {
 #blog_info p {
     display: inline;
 }
+
+main section a {
+    color: #ffa800;
+    text-decoration: underline;
+}
+
+main section ul {
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+main section ul li {
+    padding: 10px;
+    border-bottom: solid 1px black;
+    transition: 500ms;
+}
+
+main section ul li:hover {
+    border-bottom: solid 1px #ffa800;
+}
+
+main section ul li a {
+    font-size: 1.2em;
+    color: black;
+    transition: 500ms;
+    text-decoration: none;
+}
+
+main section ul li a:hover {
+    color: #ffa800;
+    text-decoration: underline;
+}

@@ -1,0 +1,26 @@
+code {
+    text-wrap: wrap;
+    color: unset;
+}
+
+code.highlighter-rouge {
+    background-color: rgba(255,168,0, 0.25);
+}
+
+/* html section */
+
+.language-html code span.c {
+    color: green;
+}
+
+.language-html code span.nt {
+    color: darkslateblue;
+}
+
+.language-html code span.na {
+    color: cadetblue;
+}
+
+.language-html code span.s {
+    color: yellowgreen;
+}

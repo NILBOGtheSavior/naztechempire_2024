@@ -11,6 +11,7 @@
         <script src="/js/menu.js"></script>
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/code.css">
         <script src="js/slideshow.js"></script>
         <style>
             #hero_image{
