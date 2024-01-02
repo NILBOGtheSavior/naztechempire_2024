@@ -112,3 +112,36 @@ main section ul li a:hover {
     color: #ffa800;
     text-decoration: underline;
 }
+
+@media (max-width: 320px) {
+    section#blog_list {
+        margin-inline: 0;
+    }
+    .info {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 320px) {
+    section#blog_list {
+        margin-inline: 0;
+    }
+    .info {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 500px) {
+    .info {
+        font-size: 1em;
+    }
+    section#blog_list {
+        margin-inline: 10%;
+    }
+}
+
+@media (min-width: 760px) {
+    section#blog_list {
+        margin-inline: auto;
+    }
+}

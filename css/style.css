@@ -123,13 +123,7 @@ main img {
     color: white;
     text-transform: uppercase;
     text-align: center;
-    padding-block: 50px;
-    width: 100%;
-}
-
-#hero_text h1 {
-    width: 50%;
-    margin: auto;
+    width: 100vw;
 }
 
 section {
@@ -207,10 +201,13 @@ footer span a img:hover {
     section {
         margin-inline: 10%;
     }
+    #hero_text {
+        padding-block: 5px;
+    }
     #hero_text h1 {
         width: 80%;
-        padding-inline: 10%;
-        font-size: 1.75em;
+        margin: 10%;
+        font-size: 1em;
     }
     #leg {
         flex: 1;
@@ -229,10 +226,14 @@ footer span a img:hover {
     section {
         margin-inline: 10%;
     }
+    #hero_text {
+        padding-block: 5px;
+        
+    }
     #hero_text h1 {
         width: 80%;
-        padding-inline: 10%;
-        font-size: 1.75em;
+        margin: 10%;
+        font-size: 1em;
     }
     #leg {
         display: none;
@@ -246,6 +247,14 @@ footer span a img:hover {
 
     #hamburger, #hamburger_menu {
         display: none;
+    }
+    #hero_text {
+        padding-block: 25px;
+        font-size: 1.5em;
+    }
+    #hero_text h1 {
+        width: 750px;
+        margin: auto;
     }
     section {
         width: 750px;
