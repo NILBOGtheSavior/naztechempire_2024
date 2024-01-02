@@ -150,6 +150,7 @@ footer span {
 
 footer span h4 {
     text-shadow: 0 0 2px white;
+    color: white;
     transition: text-shadow 500ms;
     cursor: default;
 }
