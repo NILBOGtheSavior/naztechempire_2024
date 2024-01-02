@@ -123,6 +123,7 @@ main img {
     color: white;
     text-transform: uppercase;
     text-align: center;
+    width: 100%;
 }
 
 section {
@@ -250,7 +251,6 @@ footer span a img:hover {
     #hero_text {
         padding-block: 25px;
         font-size: 1.5em;
-        width: 100%;
     }
     #hero_text h1 {
         width: 750px;
