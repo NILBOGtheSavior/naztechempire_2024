@@ -1,6 +1,7 @@
 h4 {
     font-size: 1.25em;
     flex: 1;
+    color: black;
 }
 h5 {
     color: grey;
@@ -78,6 +79,10 @@ h6 {
 
 #blog_info p {
     display: inline;
+}
+
+.blog a {
+    text-decoration: none;
 }
 
 main section a {
