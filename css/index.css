@@ -202,15 +202,23 @@
     .videos div.video iframe {
         width: 256px;
     }
+    .tile {
+        aspect-ratio: 1/1;
+    }
 }
 
 @media (min-width: 320px) {
     .slideshow {
         margin: auto;
     }
+    .tile {
+        aspect-ratio: 4/3;
+    }
 }
 
 @media (min-width: 750px) {
-
+    .tile {
+        aspect-ratio: 3/2;
+    }
 }
 
