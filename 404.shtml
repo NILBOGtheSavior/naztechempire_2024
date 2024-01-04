@@ -29,7 +29,7 @@
     <nav>
         <a href="/index.html">Home</a>
         <a href="/applications.html">Applications</a>
-        <a href="/downloads.html">Downloads</a>
+        <!-- <a href="/downloads.html">Downloads</a> -->
         <!-- <a href="#">Videos</a> -->
         <a href="/blog.html">Blog</a>
     </nav>
@@ -47,7 +47,7 @@
 <div id="hamburger_menu" class="blur">
     <a href="/index.html">Home</a>
     <a href="/applications.html">Applications</a>
-    <a href="/downloads.html">Downloads</a>
+    <!-- <a href="/downloads.html">Downloads</a> -->
     <!-- <a href="#">Videos</a> -->
     <a href="/blog.html">Blog</a>
 </div>
@@ -93,7 +93,7 @@
             <h4>Site Map</h4>
             <a href="index.html"><p>Home</p></a>
             <a href="applications.html"><p>Applications</p></a>
-            <a href="downloads.html"><p>Downloads</p></a>
+            <!-- <a href="downloads.html"><p>Downloads</p></a> -->
             <!-- <a href="#"><p>Videos</p></a> -->
             <a href="blog.html"><p>Blog</p></a>
         </span>

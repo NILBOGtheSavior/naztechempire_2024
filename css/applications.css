@@ -1,0 +1,56 @@
+#hero {
+    height: 250px;
+}
+
+.applications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.applications a {
+    border-radius: 15px;
+    flex: 1;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border: solid 1px rgba(128, 128, 128, 0.5);
+    background-size: cover;
+}
+
+.app {
+    height: 100%;
+    aspect-ratio: 1/1;
+    color: white;
+    backdrop-filter: brightness(50%);
+}
+
+.info {
+    padding: 10px;
+    bottom: 0px;
+}
+
+.info h4 {
+    font-size: 1.5em;
+}
+
+@media (max-width: 320px) {
+    .applications {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 320px) {
+    .applications {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 500px) {
+    
+}
+
+@media (min-width: 760px) {
+    .applications {
+        flex-direction: row;
+    }
+}
