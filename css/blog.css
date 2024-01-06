@@ -118,6 +118,11 @@ main section ul li a:hover {
     text-decoration: underline;
 }
 
+.reduceImage50 {
+    width: 50%;
+    margin: auto;
+}
+
 @media (max-width: 320px) {
     section#blog_list {
         margin-inline: 0;
