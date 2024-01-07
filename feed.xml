@@ -1,1 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-06T00:38:42-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Naztech Empire</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-06T18:58:51-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Naztech Empire</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Streamlined Web Development: Embracing Jekyll for Content Management</title><link href="http://localhost:4000/web_development/2024/01/01/creating-this-website.html" rel="alternate" type="text/html" title="Streamlined Web Development: Embracing Jekyll for Content Management" /><published>2024-01-01T16:56:13-06:00</published><updated>2024-01-01T16:56:13-06:00</updated><id>http://localhost:4000/web_development/2024/01/01/creating-this-website</id><content type="html" xml:base="http://localhost:4000/web_development/2024/01/01/creating-this-website.html"><![CDATA[<h2 id="contents">Contents</h2>
+
+<ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#static-brilliance---no-hyding-the-advantages">Static Brilliance - No Hyding the Advantages</a></li>
+  <li><a href="#crafting-my-theme">Crafting My Theme</a></li>
+  <li><a href="#simplified-content-management">Simplified Content Management</a></li>
+  <li><a href="#the-joy-of-independence">The Joy of Independence</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><img src="/img/blog/creating_this_website/001.png" alt="Screenshot of the Jekyll website" title="Jekyllrb.com Homepage" /></p>
+
+<p>Developing your website from the ground up is a stimulating and gratifying process. The ability to mold each pixel to your exact specification leaves little to be desired. Most people would opt to use an online website builder, with its gallery of hundreds of themes, however, as convenient as website builders are, you don’t feel the godlike power of forging your exact vision on an HTML canvas.</p>
+
+<p>I feel that the biggest drawback of a custom-built website is the difficulty of managing the vast number of pages that can accumulate, especially with a blog-style website, where, every post will have its page. However, <a href="https://jekyllrb.com/">Jekyll</a>, an amazing tool that excels in simplifying the management of dynamic content, emerges as the perfect solution.</p>
+
+<h2 id="static-brilliance---no-hyding-the-advantages">Static Brilliance - No <em>Hyding</em> the Advantages</h2>
+
+<p>Jekyll steps into the spotlight as the hero, an elegant workaround to the headache that content management previously entailed, without the need for databases or complicated back-end coding. Jekyll works by transforming plain text into a static website. This yields boosts in speed and offers a clean and fast user experience.</p>
+
+<p>Jekyll uses themes and templates to format the content onto the page, converting the plain text to a readable <code class="language-plaintext highlighter-rouge">.html</code> file. This allows you to iterate over each plain text file to display all of your blog posts. This means that, rather than adding each post to the home page, the blog list, and wherever else it may appear, using a <code class="language-plaintext highlighter-rouge">for loop</code>, you can automate that whole process.</p>
+
+<h2 id="crafting-my-theme">Crafting My Theme</h2>
+
+<h3 id="starting-with-the-design">Starting With the Design</h3>
+
+<p>Creating the theme for this website started outside of Jekyll. I designed the landing page, beginning with the header and navigation bar. This was fairly simple, and using the <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code> tags, I was able to organize and segregate my <code class="language-plaintext highlighter-rouge">html</code> content easily. After the header, I moved onto the hero section, and then the main contents of the index page. I completed the webpage with the footer, and used the <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code> tag to separate it from the rest of the page, just as I did the header.</p>
+
+<h3 id="integrating-my-design-with-jekyll">Integrating My Design With Jekyll</h3>
+
+<p>After I was happy with how it looked, I created the Jekyll folder. I started copying my files into the specified directories and took apart my <code class="language-plaintext highlighter-rouge">index.html</code> file. The header and footer were then separated from the file and placed into the <code class="language-plaintext highlighter-rouge">_includes</code> directory. This allows me to use an <code class="language-plaintext highlighter-rouge">{{ include &lt;file.ext&gt; }}</code> tag to import the same header and footer into all my template pages. All that is left is to create the template pages in the <code class="language-plaintext highlighter-rouge">_layouts</code> directory, including a <code class="language-plaintext highlighter-rouge">{{ content }}</code> tag to import your <code class="language-plaintext highlighter-rouge">.markdown</code> file contents into the page.</p>
+
+<h2 id="simplified-content-management">Simplified Content Management</h2>
+
+<p>While crafting a visually appealing website was a priority, the heart of the matter lay in managing content effortlessly. Jekyll’s reliance on Markdown made content creation a breeze. Writing blog posts, updating project descriptions, or adding new pages—all accomplished with the simplicity of plain text.</p>
+
+<p>One of the biggest time savers is the iterative features that Jekyll provides. Jekyll allows you to loop over all the files in a directory and generate code based on that. Using variables declared in a page’s front matter, we can pass data into the <code class="language-plaintext highlighter-rouge">html</code> code in each iteration.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c">&lt;!-- front matter found at the beginning of each markdown document --&gt;</span>
+
+---
+layout: default
+title:  "Example"
+image: example.jpg
+date:   2023-12-27 02:59:19 -0600
+---
+
+
+<span class="c">&lt;!-- html code found in the template page --&gt;</span>
+
+{% for page in site.pages %}
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ page.url }}"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;figure&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"img/{{ page.image }}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;figcaption&gt;</span>{{ page.title }}<span class="nt">&lt;/figcaption&gt;</span>
+        <span class="nt">&lt;/figure&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+{% endfor %}
+
+</code></pre></div></div>
+<h2 id="the-joy-of-independence">The Joy of Independence</h2>
+
+<p>What sets Jekyll apart is its ability to offer a self-contained web environment. No reliance on external databases or server-side processing—just static files that could be deployed effortlessly. This independence meant my website was not only fast and secure but also a joy to maintain.</p>
+
+<p>The deployment process is a graceful dance: initializing a <code class="language-plaintext highlighter-rouge">git</code> repository, pushing to a remote counterpart, and effortlessly pulling it into my web server.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In conclusion, embracing Jekyll for content management has been a gratifying experience. From crafting a custom theme to simplifying content management, Jekyll has become a trusted ally in my journey to establish a distinctive and efficient online presence. If you’re a fellow enthusiast of design and simplicity, consider giving Jekyll a try — you might find, as I did, that it’s the perfect companion for your digital endeavors.</p>]]></content><author><name>Nasser Abumariam</name></author><category term="Web_Development" /><summary type="html"><![CDATA[Contents]]></summary></entry></feed>
