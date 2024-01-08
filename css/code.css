@@ -10,28 +10,6 @@ code {
     text-wrap: wrap;
 }
 
-.copyIcon {
-    height: 25px;
-    width: 25px;
-    padding: 5px;
-    /* background-image: url(/img/icons/copy.png); */
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    display: none;
-    border-radius: 5px 15px 5px 5px;
-}
-
-.copyIcon:hover {
-    background-color: rgba(255,168,0, 0.25);
-}
-
-div.highlighter-rouge:hover .copyIcon {
-    display: block;
-}
-
 div.highlighter-rouge {
     text-wrap: wrap;
     color: unset;
@@ -83,3 +61,41 @@ code.highlighter-rouge {
     color: var(--function);
 }
 
+.copyIcon {
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+    border-radius: 5px 15px 5px 5px;
+}
+
+.copyIcon:hover {
+    background-color: rgba(255,168,0, 0.25);
+}
+
+div.highlighter-rouge:hover .copyIcon {
+    display: block;
+}
+
+@media (max-width: 320px) {
+    .copyIcon {
+        display: block;
+    }
+}
+
+@media (min-width: 320px) {
+    .copyIcon {
+        display: block;
+    }
+}
+
+@media (min-width: 760px) {
+    .copyIcon {
+        display: none;
+    }
+}

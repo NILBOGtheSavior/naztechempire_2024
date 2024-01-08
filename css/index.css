@@ -5,6 +5,7 @@
 }
 
 .tile {
+    
     flex: 1;
     min-width: 250px;
     border-radius: 15px;
@@ -21,12 +22,20 @@
 }
 
 .tile_wrap {
+    display: block;
     height: 100%;
+    max-height: fit-content;
     box-shadow: 0 0 5px black;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0px);
     transition: backdrop-filter 500ms;
+}
+
+.tile_wrap p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .tile_wrap:hover {

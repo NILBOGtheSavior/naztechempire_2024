@@ -122,6 +122,11 @@ main section ul li:last-child:hover {
 }
 
 main section ul li a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-size: 1em;
     color: black;
     transition: 500ms;
