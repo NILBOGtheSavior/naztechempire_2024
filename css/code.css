@@ -21,7 +21,7 @@ div.highlighter-rouge {
 
 code.highlighter-rouge {
     text-wrap: wrap;
-    background-color: rgba(255,168,0, 0.25);
+    background-color: var(--accent25);
 }
 
 /* html section */
@@ -75,7 +75,7 @@ code.highlighter-rouge {
 }
 
 .copyIcon:hover {
-    background-color: rgba(255,168,0, 0.25);
+    background-color: var(--accent25);
 }
 
 div.highlighter-rouge:hover .copyIcon {

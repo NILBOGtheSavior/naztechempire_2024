@@ -12,6 +12,7 @@
         <script src="/js/code-copy.js"></script>
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/global.css">
         <link rel="stylesheet" href="/css/code.css">
         <link rel="stylesheet" href="/css/blog.css">
         <script src="/js/contents.js"></script>
@@ -83,7 +84,7 @@
 
 <h2 id="programming-in-python">Programming in Python</h2>
 
-<p>Python is an interpreted programming language, rather than a compiled one. This means that an interpreter runs through each line of code at runtime, and then executes it, compared to a compiled program, where a compiler will convert the entire program into binary code upon compilation, and the computer executes the binary code when the user runs the program. This is beneficial as you don’t need to compile your program every time you want to run it. This speeds up the development process considerably, especially when the programs being compiled start increasing in size <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+<p>Python is an interpreted programming language, rather than a compiled one. This means that an interpreter runs through each line of code at runtime, and then executes it, compared to a compiled program, where a compiler will convert the entire program into binary code upon compilation, and the computer executes the binary code when the user runs the program. This is beneficial as you don’t need to compile your program every time you want to run it. This speeds up the development process considerably, especially when the programs being compiled start increasing in size<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <p>Python is, in my opinion, one of the easiest programming languages to learn. When I come back to it after weeks of programming in C++, I get confused by how simple the syntax is. I look at my code like, “I’m missing some brackets or a semi-colon or something”, but lo and behold, the interpreter runs my code like nothing.</p>
 
@@ -95,7 +96,7 @@
 
 <p class="reduceImage50"><img src="/img/blog/tkinter-gui/001.png" alt="Screenshot of the Tkinter App" title="Jekyllrb.com Homepage" /></p>
 
-<p>This is a basic Tkinter application that will render a window with a button and a label. You can try it yourself. To check whether the Tkinter library is installed, you can run the <code class="language-plaintext highlighter-rouge">python -m tkinter</code> command in the terminal. A small window should pop up. If not, you may need to install the Tkinter library first. Refer to the <a href="https://docs.python.org/3/library/tkinter.html">documentation</a> for instructions on how to install Tkinter.</p>
+<p>This is a basic Tkinter application that will render a window with a button and a label<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. You can try it yourself. To check whether the Tkinter library is installed, you can run the <code class="language-plaintext highlighter-rouge">python -m tkinter</code> command in the terminal. A small window should pop up. If not, you may need to install the Tkinter library first. Refer to the <a href="https://docs.python.org/3/library/tkinter.html">documentation</a> for instructions on how to install Tkinter.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">tkinter</span> <span class="k">as</span> <span class="n">tk</span>
 
@@ -122,7 +123,7 @@
 
 <h2 id="capabilities-of-a-gui-python-application">Capabilities of a GUI Python Application</h2>
 
-<p>Python is a diverse programming language with many libraries. This proves limitless possibilities when it comes to programming a GUI application with Tkinter. Below you can see a Tkinter application combined with OpenCV2 to create a camera app.</p>
+<p>Python is a diverse programming language with many libraries. This proves limitless possibilities when it comes to programming a GUI application with Tkinter. Below you can see a Tkinter application combined with OpenCV2<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> to create a camera app.</p>
 
 <p class="reduceImage50"><img src="/img/blog/tkinter-gui/002.png" alt="Screenshot of a Tkinter Camera App" title="Tkinter Camera App" /></p>
 
@@ -184,6 +185,12 @@
     <li id="fn:1" role="doc-endnote">
       <p>In performance-intensive scenarios, compiled programs often excel due to their direct translation into machine code, enabling faster execution. Interpreted languages, relying on line-by-line execution, may introduce performance overhead. While advancements like just-in-time compilation and optimizations have narrowed the gap, highly performance-critical applications often favor compiled languages for their inherent efficiency. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Pack and grid are two geometry managers used for organizing and placing widgets within a container (typically a window). The pack method is a geometry manager that organizes widgets in blocks before placing them in the parent widget. The grid method is a geometry manager that organizes widgets in a table-like structure of rows and columns. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>OpenCV is an open-source computer vision and machine learning software library. Originally developed by Intel, it is now maintained by the OpenCV community. OpenCV is widely used for various image and video processing tasks and provides a rich set of tools and functions for computer vision applications. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
   </ol>
 </div>
 
@@ -193,6 +200,28 @@
                 <div id="blog_info">
                     <p><b>Published:</b> 01/08/24</p>
                     <p><b>Author:</b> Nasser Abumariam</p>
+                </div>
+            </section>
+            <section>
+                <h2>Read more:</h2>
+                <div class="otherArticles">
+                    
+                    
+                    
+                        
+                    
+                        
+                            
+                            <a href="/web_development/2024/01/01/creating-this-website.html">
+                                    <div class="thumbnail"><img src="/img/blog/creating_this_website/thumbnail.jpg" alt="">
+                                    </div>
+                                <h2>Streamlined Web Development: Embracing Jekyll for Content Management</h2>
+                                
+                                </a>
+                                
+                            
+                        
+                    
                 </div>
             </section>
         </main>

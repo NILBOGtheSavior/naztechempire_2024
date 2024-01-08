@@ -1,0 +1,17 @@
+:root {
+    /*** Color List: ***
+    * Deep Gold: 194, 155, 12
+    * Dark Champagne Gold: 215, 198, 157
+    * Dark Champagne: 194, 178, 128
+    * Steel Gray: 114, 111, 112
+    * Electric Blue: 3, 80, 150
+    * Rich Electric Blue: 83, 104, 120
+    */
+
+    --rgb_value: 83, 104, 120;
+    --accent: rgba(var(--rgb_value), 1);
+    --accent75: rgba(var(--rgb_value), 0.75);
+    --accent50: rgba(var(--rgb_value), 0.5);
+    --accent25: rgba(var(--rgb_value), 0.25);
+    --accent10: rgba(var(--rgb_value), 0.1);
+}

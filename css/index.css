@@ -227,7 +227,7 @@
         margin: auto;
     }
     .tile {
-        aspect-ratio: 4/3;
+        aspect-ratio: 1/1;
     }
     .text {
         margin-bottom: 0px;
