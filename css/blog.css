@@ -90,7 +90,7 @@ main section a {
     text-decoration: underline;
 }
 
-main section ul {
+main section ol#contents {
     border: solid 1px rgba(128, 128, 128, 0.75);
     padding: 10px;
     background-color: rgba(255, 168, 0, 0.25);
@@ -98,30 +98,30 @@ main section ul {
     overflow: hidden;
 }
 
-main section ul li {
+main section ol#contents li {
     padding: 5px;
     list-style-type: none;
     transition: 500ms;
 }
 
-main section ul li:not(:first-child) {
+main section ol#contents li:not(:first-child) {
     list-style-type: none;
     border-bottom: solid 1px black;    
 }
 
-main section ul li:not(:first-child):hover {
+main section ol#contents li:not(:first-child):hover {
     border-bottom: solid 1px #ffa800;
 }
 
-main section ul li:last-child {
+main section ol#contents li:last-child {
     border-bottom: none;    
 }
 
-main section ul li:last-child:hover {
+main section ol#contents li:last-child:hover {
     border-bottom: none;
 }
 
-main section ul li a {
+main section ol#contents li a {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -133,7 +133,7 @@ main section ul li a {
     text-decoration: none;
 }
 
-main section ul li a:hover {
+main section ol#contents li a:hover {
     color: #ffa800;
     text-decoration: underline;
 }
@@ -141,6 +141,23 @@ main section ul li a:hover {
 .reduceImage50 {
     width: 50%;
     margin: auto;
+}
+
+/* footnotes */
+
+.footnotes ol {
+    background-color: rgba(255, 168, 0, 0.1);
+    padding-block: 10px;
+    border-radius: 5px;
+    list-style-position: outside;
+}
+
+.footnotes ol li {
+    list-style-position: outside;
+}
+
+.footnotes ol li a {
+    text-decoration: none;
 }
 
 @media (max-width: 320px) {

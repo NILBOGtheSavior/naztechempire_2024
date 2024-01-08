@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-08T04:42:54-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Naztech Empire</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Using Tkinter to Create GUI Apps in Python</title><link href="http://localhost:4000/software/2024/01/08/tkinter-gui.html" rel="alternate" type="text/html" title="Using Tkinter to Create GUI Apps in Python" /><published>2024-01-08T04:41:37-06:00</published><updated>2024-01-08T04:41:37-06:00</updated><id>http://localhost:4000/software/2024/01/08/tkinter-gui</id><content type="html" xml:base="http://localhost:4000/software/2024/01/08/tkinter-gui.html"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-08T14:50:03-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Naztech Empire</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Using Tkinter to Create GUI Apps in Python</title><link href="http://localhost:4000/software/2024/01/08/tkinter-gui.html" rel="alternate" type="text/html" title="Using Tkinter to Create GUI Apps in Python" /><published>2024-01-08T04:41:37-06:00</published><updated>2024-01-08T04:41:37-06:00</updated><id>http://localhost:4000/software/2024/01/08/tkinter-gui</id><content type="html" xml:base="http://localhost:4000/software/2024/01/08/tkinter-gui.html"><![CDATA[<ol id="contents">
   <li>
     <h4 id="contents">Contents</h4>
   </li>
@@ -10,7 +10,7 @@
   <li><a href="#visual-tk">Visual TK</a></li>
   <li><a href="#packaging-and-distributing-gui-apps-with-pyinstaller">Packaging and Distributing GUI Apps with PyInstaller</a></li>
   <li><a href="#conclusion">Conclusion</a></li>
-</ul>
+</ol>
 
 <h2 id="introduction">Introduction</h2>
 
@@ -20,7 +20,7 @@
 
 <h2 id="programming-in-python">Programming in Python</h2>
 
-<p>Python is an interpreted programming language, rather than a compiled one. This means that an interpreter runs through each line of code at runtime, and then executes it, compared to a compiled program, where a compiler will convert the entire program into binary code upon compilation, and the computer executes the binary code when the user runs the program. This is beneficial as you don’t need to compile your program every time you want to run it. This speeds up the development process considerably, especially when the programs being compiled start increasing in size.</p>
+<p>Python is an interpreted programming language, rather than a compiled one. This means that an interpreter runs through each line of code at runtime, and then executes it, compared to a compiled program, where a compiler will convert the entire program into binary code upon compilation, and the computer executes the binary code when the user runs the program. This is beneficial as you don’t need to compile your program every time you want to run it. This speeds up the development process considerably, especially when the programs being compiled start increasing in size <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <p>Python is, in my opinion, one of the easiest programming languages to learn. When I come back to it after weeks of programming in C++, I get confused by how simple the syntax is. I look at my code like, “I’m missing some brackets or a semi-colon or something”, but lo and behold, the interpreter runs my code like nothing.</p>
 
@@ -115,7 +115,14 @@
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>In conclusion, Tkinter is a great way to build GUI apps. It allows for programming in a simple, easy-to-learn language, it’s full of functionality, cross-platform, and can be easily packaged with a handy Python library. It also has great customizability and a decent community that would be more than happy to answer questions on forums.</p>]]></content><author><name>Nasser Abumariam</name></author><category term="Software" /><summary type="html"><![CDATA[Contents Introduction Programming in Python The Tkinter Library A Simple Tkinter Application Capabilities of a GUI Python Application Visual TK Packaging and Distributing GUI Apps with PyInstaller Conclusion]]></summary></entry><entry><title type="html">Streamlined Web Development: Embracing Jekyll for Content Management</title><link href="http://localhost:4000/web_development/2024/01/01/creating-this-website.html" rel="alternate" type="text/html" title="Streamlined Web Development: Embracing Jekyll for Content Management" /><published>2024-01-01T16:56:13-06:00</published><updated>2024-01-01T16:56:13-06:00</updated><id>http://localhost:4000/web_development/2024/01/01/creating-this-website</id><content type="html" xml:base="http://localhost:4000/web_development/2024/01/01/creating-this-website.html"><![CDATA[<ul>
+<p>In conclusion, Tkinter is a great way to build GUI apps. It allows for programming in a simple, easy-to-learn language, it’s full of functionality, cross-platform, and can be easily packaged with a handy Python library. It also has great customizability and a decent community that would be more than happy to answer questions on forums.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>In performance-intensive scenarios, compiled programs often excel due to their direct translation into machine code, enabling faster execution. Interpreted languages, relying on line-by-line execution, may introduce performance overhead. While advancements like just-in-time compilation and optimizations have narrowed the gap, highly performance-critical applications often favor compiled languages for their inherent efficiency. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Nasser Abumariam</name></author><category term="Software" /><summary type="html"><![CDATA[Contents Introduction Programming in Python The Tkinter Library A Simple Tkinter Application Capabilities of a GUI Python Application Visual TK Packaging and Distributing GUI Apps with PyInstaller Conclusion]]></summary></entry><entry><title type="html">Streamlined Web Development: Embracing Jekyll for Content Management</title><link href="http://localhost:4000/web_development/2024/01/01/creating-this-website.html" rel="alternate" type="text/html" title="Streamlined Web Development: Embracing Jekyll for Content Management" /><published>2024-01-01T16:56:13-06:00</published><updated>2024-01-01T16:56:13-06:00</updated><id>http://localhost:4000/web_development/2024/01/01/creating-this-website</id><content type="html" xml:base="http://localhost:4000/web_development/2024/01/01/creating-this-website.html"><![CDATA[<ul>
   <li>
     <h4 id="contents">Contents</h4>
   </li>

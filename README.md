@@ -4,9 +4,11 @@ This is a public repository for my website. The files are generated using Jekyll
 
 ## TODO
 
-- Create the template for each application
-- Update the "Downloads" page with more diverse styling
-- Write blog 2 for the 8th of Jan
-- Write blog 3 for the 15th of Jan
-- Add a dark mode switch
+### January
+
+- [ ] Create the template for each application
+- [ ] Update the "Downloads" page with more diverse styling
+- [x] Write blog 2 for the 8th of Jan
+- [ ] Write blog 3 for the 15th of Jan
+- [ ] Add a dark mode switch
 
