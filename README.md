@@ -6,9 +6,11 @@ This is a public repository for my website. The files are generated using Jekyll
 
 ### January
 
-- [ ] Create the template for each application
-- [ ] Update the "Downloads" page with more diverse styling
+- [x] Create the template for each application
+- [ ] Create the "Downloads" page
 - [x] Write blog 2 for the 8th of Jan
 - [ ] Write blog 3 for the 15th of Jan
 - [ ] Add a dark mode switch
+- [x] Create a "Read more section at the bottom of posts
+- [ ] Add Blockquotes
 
