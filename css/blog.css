@@ -16,7 +16,7 @@ h5 {
 }
 h6 {
     font-size: 0.8em;
-    color: grey;
+    color: var(--accent);
 }
 
 #hero {
@@ -105,6 +105,11 @@ h6 {
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
+    transition: 500ms;
+}
+
+.otherArticles a:hover .thumbnail {
+    scale: 105%;
 }
 
 .otherArticles a .thumbnail img {
@@ -117,6 +122,12 @@ h6 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: black;
+    transition: color 500ms;
+}
+
+.otherArticles a h2:hover {
+    color: var(--accent);
 }
 
 .blog a {
@@ -219,6 +230,15 @@ main section ol#contents li a:hover {
 @media (min-width: 500px) {
     .info {
         font-size: 1em;
+    }
+    .info h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap:break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        max-height: 3.75em;
     }
     section#blog_list {
         margin-inline: 10%;

@@ -95,7 +95,7 @@ header div#account_info {
 }
 
 #hamburger_menu a:hover {
-    background-color: rgba(192, 192, 192, 0.75);
+    background-color: rgba(192, 192, 192, 0.25);
     color: var(--accent);
     border-bottom: solid 1px var(--accent75);
 }

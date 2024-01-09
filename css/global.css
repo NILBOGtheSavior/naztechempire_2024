@@ -8,7 +8,7 @@
     * Rich Electric Blue: 83, 104, 120
     */
 
-    --rgb_value: 83, 104, 120;
+    --rgb_value: 194, 155, 12;
     --accent: rgba(var(--rgb_value), 1);
     --accent75: rgba(var(--rgb_value), 0.75);
     --accent50: rgba(var(--rgb_value), 0.5);
