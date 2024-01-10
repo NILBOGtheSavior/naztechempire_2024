@@ -17,6 +17,12 @@
     background-size: cover;
 }
 
+main img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
 .app {
     height: 100%;
     aspect-ratio: 1/1;
@@ -31,6 +37,71 @@
 
 .info h4 {
     font-size: 1.5em;
+}
+
+.appDetails {
+    background-color: var(--accent10);
+    border: solid 1px var(--accent50);
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    margin-block-end: 25px;
+}
+
+.appDetails img {
+    display: inline;
+    width: 200px;
+    padding: 25px;
+}
+
+.appDetails .description p.tags {
+    flex: 0;
+    padding: 2px 5px;
+    margin-block: 10px;
+    /* border-radius: 10px; */
+    display: inline;
+    color: var(--accent);
+    /* background-color: var(--accent); */
+    text-align: center;
+    font-weight: 100;
+}
+
+.appDetails .description .downloads {
+    display: flex;
+    text-wrap: nowrap;
+    float: inline-end;
+    gap: 15px;
+    margin: 10px;
+}
+
+.appDetails .description button.versions {
+    flex: 0;
+    font-size: 1em;
+    padding: 2px 10px;
+    float: right;
+    border-radius: 15px;
+    display: inline;
+    color: var(--accent);
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.appDetails .description button.download {
+    flex: 0;
+    font-size: 1em;
+    padding: 2px 10px;
+    float: right;
+    border-radius: 15px;
+    display: inline;
+    color: white;
+    border: solid 1px black;
+    background-color: var(--accent);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 @media (max-width: 320px) {

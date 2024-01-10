@@ -15,3 +15,8 @@
     --accent25: rgba(var(--rgb_value), 0.25);
     --accent10: rgba(var(--rgb_value), 0.1);
 }
+
+.reduceImage50 {
+    width: 50%;
+    margin: auto;
+}

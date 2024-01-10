@@ -100,9 +100,7 @@ header div#account_info {
     border-bottom: solid 1px var(--accent75);
 }
 
-main img {
-    width: 100%;
-}
+
 
 #hero {
     height: 450px;

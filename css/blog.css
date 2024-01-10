@@ -97,7 +97,6 @@ h6 {
     text-decoration: none;
     flex: 1;
     width: 200px;
-    aspect-ratio: 1/1;
 }
 
 .otherArticles a .thumbnail {
@@ -126,12 +125,16 @@ h6 {
     transition: color 500ms;
 }
 
-.otherArticles a h2:hover {
+.otherArticles a:hover .blog_title {
     color: var(--accent);
 }
 
 .blog a {
     text-decoration: none;
+}
+
+main img {
+    width: 100%;
 }
 
 main section a {
@@ -185,11 +188,6 @@ main section ol#contents li a {
 main section ol#contents li a:hover {
     color: var(--accent);
     text-decoration: underline;
-}
-
-.reduceImage50 {
-    width: 50%;
-    margin: auto;
 }
 
 /* footnotes */
