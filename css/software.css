@@ -1,3 +1,8 @@
+h5 {
+    font-size: 0.8em;
+    padding-block: 10px;
+}
+
 #hero {
     height: 250px;
 }
@@ -58,10 +63,8 @@ main img {
     flex: 0;
     padding: 2px 5px;
     margin-block: 10px;
-    /* border-radius: 10px; */
     display: inline;
     color: var(--accent);
-    /* background-color: var(--accent); */
     text-align: center;
     font-weight: 100;
 }
@@ -102,6 +105,19 @@ main img {
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+}
+
+.appDetails .description button.download img {
+    height: 1em;
+    width: 1em;
+    padding: 0px 5px;
+}
+
+#software_info {
+    color: var(--accent);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @media (max-width: 320px) {
