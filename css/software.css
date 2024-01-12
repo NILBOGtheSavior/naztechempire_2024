@@ -60,6 +60,12 @@ main img {
     filter: drop-shadow(-2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
+.appDetails .description h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .appDetails .description p.tags {
     flex: 0;
     padding: 2px 5px;
@@ -133,20 +139,30 @@ video {
     .applications {
         flex-direction: column;
     }
+
 }
 
 @media (min-width: 320px) {
     .applications {
         flex-direction: column;
     }
+
+    .appDetails {
+        flex-direction: column;
+    }
+
 }
 
 @media (min-width: 500px) {
-    
+
 }
 
 @media (min-width: 760px) {
     .applications {
+        flex-direction: row;
+    }
+
+    .appDetails {
         flex-direction: row;
     }
 }
