@@ -32,10 +32,20 @@
     transition: backdrop-filter 500ms;
 }
 
+.tile_wrap h3{
+    display: inline;
+}
+
 .tile_wrap p {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.tile_wrap img{
+    height: 2em;
+    float: inline-end;
+    filter: drop-shadow(0px 0px 2px black);
 }
 
 .tile_wrap:hover {

@@ -57,6 +57,7 @@ main img {
     display: inline;
     width: 150px;
     padding: 25px;
+    filter: drop-shadow(-2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
 .appDetails .description p.tags {
@@ -111,6 +112,7 @@ main img {
     height: 1em;
     width: 1em;
     padding: 0px 5px;
+    filter: none;
 }
 
 #software_info {
@@ -118,6 +120,13 @@ main img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+video {
+    width: 50%;
+    /* height: auto; */
+    display: block;
+    margin: auto;
 }
 
 @media (max-width: 320px) {
