@@ -55,7 +55,7 @@ main img {
 
 .appDetails img {
     display: inline;
-    width: 200px;
+    width: 150px;
     padding: 25px;
 }
 
@@ -100,8 +100,8 @@ main img {
     border-radius: 15px;
     display: inline;
     color: white;
-    border: solid 1px black;
-    background-color: var(--accent);
+    border: none;
+    background-color: var(--accent50);
     text-align: center;
     font-weight: bold;
     cursor: pointer;

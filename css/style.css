@@ -9,6 +9,18 @@ header {
     box-shadow: 0 0 5px black;
 }
 
+header #logo {
+    margin: 10px;
+}
+
+header #logo img {
+    height: 100%;
+    margin-inline-start: 10px;
+    display: inline-block;
+}
+
+
+
 .slim {
     z-index: 10;
     position: sticky;
@@ -18,12 +30,6 @@ header {
 
 .blur {
     backdrop-filter: blur(25px);
-}
-
-header img {
-    height: 50px;
-    margin-inline: 10px;
-    display: inline-block;
 }
 
 nav, header div#account_info {
