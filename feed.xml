@@ -1,4 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-12T14:57:47-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Naztech Empire</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Using Tkinter to Create GUI Apps in Python</title><link href="http://localhost:4000/blog/software_development/tkinter-gui.html" rel="alternate" type="text/html" title="Using Tkinter to Create GUI Apps in Python" /><published>2024-01-08T04:41:37-06:00</published><updated>2024-01-08T04:41:37-06:00</updated><id>http://localhost:4000/blog/software_development/tkinter-gui</id><content type="html" xml:base="http://localhost:4000/blog/software_development/tkinter-gui.html"><![CDATA[<ol id="contents">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-17T02:00:15-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Naztech Empire</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Linux Series 101: Introduction to Linux</title><link href="http://localhost:4000/blog/linux/introduction-to-linux.html" rel="alternate" type="text/html" title="Linux Series 101: Introduction to Linux" /><published>2024-01-15T14:03:00-06:00</published><updated>2024-01-15T14:03:00-06:00</updated><id>http://localhost:4000/blog/linux/introduction-to-linux</id><content type="html" xml:base="http://localhost:4000/blog/linux/introduction-to-linux.html"><![CDATA[<ol id="contents">
+  <li>
+    <h4 id="contents">Contents</h4>
+  </li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#the-drawbacks-of-windows">The Drawbacks of Windows</a></li>
+  <li><a href="#linus-father-of-linux-and-the-open-source-tribe">Linus, Father of Linux</a></li>
+  <li><a href="#linux-and-the-kernel">Linux and the Kernel</a></li>
+  <li><a href="#the-linux-terminal">The Linux Terminal</a></li>
+  <li><a href="#102-installation-and-dual-boot">102: Installation and Dual Boot</a></li>
+</ol>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>When it comes to operating systems, three popular ones stand out: Microsoft Windows, MacOS, and Linux. Windows is the most widely used, offering a variety of applications ranging from video games and graphics programs to office tools. While Windows boasts a diverse software ecosystem, it is not without its drawbacks.</p>
+
+<h2 id="the-drawbacks-of-windows">The Drawbacks of Windows</h2>
+
+<p>Windows is a visually appealing operating system, with major updates every few years. The design has improved significantly since the problematic Windows 8 update, which aimed at enhancing the tablet user experience. Windows 10 struck a balance between desktop and tablet versions, incorporating features from Windows 8 while addressing its issues. Windows 11 was a makeover with a few helpful widgets sprinkled here and there. Overall, a solid OS with many advantages.</p>
+
+<p>However, Windows has its drawbacks, particularly in terms of system efficiency. The operating system tends to be resource-intensive, with numerous background processes running and sometimes inefficient operations that strain the CPU. This causes issues such as lag, delayed loading times, and increased power consumption.</p>
+
+<p>Another significant disadvantage of Windows is the lack of freedom and customization options. Unlike open-source alternatives like Linux, Windows is a closed-source OS that limits user control. Windows users have fewer customization features and lack access to system files and configuration files.</p>
+
+<h2 id="linus-father-of-linux-and-penguin-loving-programmers">Linus, Father of Linux <em><small>(and penguin-loving programmers)</small></em></h2>
+
+<p class="inlineImage10"><img src="/img/blog/linux_101/001.png" alt="Tux the Mascot" title="Tux the Mascot" /></p>
+
+<p>Before I introduce Linux, I would like to introduce you to Linus Torvalds, a Finnish computer scientist. He is the magical being who created the <a href="#the-kernel">Linux Kernel</a> in 1991. He wanted to create an open-source alternative to Unix, another popular operating system. It started as a personal project, but after sharing it with the community, the collaborative effort developed it into the Operating System we know today.</p>
+
+<p>Over the years, Linux evolved into a powerful and versatile operating system kernel. It became a cornerstone for various Linux distributions (distros) like Ubuntu, Fedora, and Debian. It’s also the foundation for Android, powering a large share of mobile devices. Linux has become a dominant force in server environments, running a significant portion of servers worldwide. This website runs on a Linux box.</p>
+
+<h3 id="penguin-mascot">Penguin Mascot</h3>
+
+<p>When Linus Torvalds birthed the Linux kernel into the digital realm, he not only laid the foundation for a revolutionary operating system but also introduced a distinctive and endearing symbol: Tux the penguin. Adopted as the official mascot of the Linux kernel, Tux is not just a quirky choice; it encapsulates the very essence of the project’s ethos, its open and friendly nature.</p>
+
+<h2 id="linux-and-the-kernel">Linux and the Kernel</h2>
+
+<h3 id="linux">Linux</h3>
+
+<p>Linux is an open-source operating system. This means that users can access and modify its source code. This allows for multiple developments to occur. This ‘open’ philosophy fosters collaboration and innovation within the global developer community. An example of this is the development of several available Linux distributions (distros), including Ubuntu, Fedora, Debian, and CentOS. These distros package the kernel with additional software and a User Interface (UI).</p>
+
+<p>Linux boasts a multitude of impressive features that contribute to its remarkable flexibility, enabling it to seamlessly adapt to various purposes.</p>
+
+<ul>
+  <li>
+    <p><strong>Multitasking:</strong> Multitasking allows multiple processes to run simultaneously. This means that the system can be delegated to run, for example, a file server in one container, a media server in another, and still can complete day-to-day operations such as programming, text editing, web browsing, etc.</p>
+  </li>
+  <li>
+    <p><strong>Multiuser:</strong> The concept of multiuser functionality in Linux proves exceptionally valuable, particularly within a server environment. In this setting, the ability for multiple users to seamlessly interact with the system concurrently is a key advantage. This collaborative approach not only enhances operational efficiency but also facilitates a streamlined and cooperative workflow, making Linux an ideal choice for servers where simultaneous user interactions are a common and essential requirement.</p>
+  </li>
+  <li>
+    <p><strong>Stability and Reliability:</strong> Linux is known for its stability and reliability, making it a preferred choice for servers and critical systems. It often powers mission-critical infrastructure, including web servers and enterprise environments.</p>
+  </li>
+  <li>
+    <p><strong>Security Features:</strong> Linux has robust security features, including user privilege management, file permissions, and a firewall. Regular security updates and a proactive community contribute to a secure computing environment.</p>
+  </li>
+  <li>
+    <p><strong>Command Line Interface (CLI):</strong> Linux offers a powerful command-line interface, providing users with extensive control over system configuration and management. Many Linux enthusiasts prefer the CLI for its efficiency and flexibility.</p>
+  </li>
+</ul>
+
+<h3 id="the-kernel">The Kernel</h3>
+
+<p>The kernel is the core component responsible for managing hardware resources and providing essential services. If the hardware was the body of a computer, the kernel would be the soul. The Linux kernel follows a monolithic architecture, where the core functionalities are part of a single, large executable file. Device drivers, file systems, and system calls are integral parts of the monolithic kernel. Linux kernel developers prioritize hardware compatibility, aiming to support a wide range of devices. Regular updates include new drivers and enhancements to ensure compatibility with evolving hardware.</p>
+
+<p>The Linux kernel is developed collaboratively by a diverse community of developers worldwide. The development process involves regular releases, with contributors submitting patches and improvements. The Linux kernel undergoes continuous performance optimization to improve resource utilization and responsiveness. Kernel updates often include improvements in scheduling, memory management, and other critical areas.</p>
+
+<h2 id="the-linux-terminal">The Linux Terminal</h2>
+
+<p class="reduceImage50"><img src="/img/blog/linux_101/terminal.png" alt="The Linux terminal" title="The Linux terminal" /></p>
+
+<h3 id="command-line-interface-cli">Command-Line Interface (CLI)</h3>
+
+<p>The terminal provides a command-line interface, allowing users to interact with the operating system by typing commands. Operations include listing directories (or folders, for you basic <em>Windows</em> users), creating, deleting, copying, and moving files, and many more.
+<!-- To see more commands, check out [this]() post. -->
+Unlike graphical user interfaces (GUIs), the terminal relies on text-based input and output, providing a powerful and efficient way to control the system. The terminal is often associated with a shell, which is a command interpreter that interprets user commands and executes them.</p>
+
+<h4 id="bash">BASH</h4>
+
+<p>Bash, short for “Bourne Again SHell,” is a widely used command processor and scripting shell in Unix-like operating systems, including Linux. Users can create scripts by writing a series of commands that Bash can execute. Bash is an evolution of the original Bourne Shell (sh) developed by Stephen Bourne. It incorporates features from other shells, such as the C Shell (<code class="language-plaintext highlighter-rouge">csh</code>) and the Korn Shell (<code class="language-plaintext highlighter-rouge">ksh</code>). It has become the default shell for many Linux distributions and is widely adopted in Unix-like systems.</p>
+
+<p>Bash includes features like command-line editing, history, and job control, enhancing the user experience and productivity. It supports aliases, allowing users to create shorthand names for commands. Bash scripts are executed by interpreting the commands sequentially. Users can make scripts executable and run them like any other program.</p>
+
+<p>Users can access a wide range of system commands directly from the terminal, enabling precise control over system configuration and management. The terminal provides commands for navigating and manipulating the file system, making tasks such as file and directory creation, deletion, and navigation efficient.</p>
+
+<p>Many Linux distributions use the terminal for package management, allowing users to install, update, and remove software packages using command-line tools like <code class="language-plaintext highlighter-rouge">apt</code> or <code class="language-plaintext highlighter-rouge">yum</code>. The terminal is crucial for remote server administration through protocols like SSH (Secure Shell), enabling users to manage servers and systems from a distance.</p>
+
+<p>Users can customize the appearance and behavior of the terminal to suit their preferences, including color schemes, fonts, and keyboard shortcuts.</p>
+
+<h2 id="102-installation-and-dual-boot">102: Installation and Dual Boot</h2>
+
+<p>In the next article, I will go over the installation of Linux and dual-boot, including customization.</p>]]></content><author><name>Nasser Abumariam</name></author><category term="Linux" /><summary type="html"><![CDATA[Contents Introduction The Drawbacks of Windows Linus, Father of Linux Linux and the Kernel The Linux Terminal 102: Installation and Dual Boot]]></summary></entry><entry><title type="html">A Comprehensive Guide to LED Strips, Custom Soldering, and Programming</title><link href="http://localhost:4000/blog/electronics/guide-to-led-strips.html" rel="alternate" type="text/html" title="A Comprehensive Guide to LED Strips, Custom Soldering, and Programming" /><published>2024-01-10T09:57:09-06:00</published><updated>2024-01-10T09:57:09-06:00</updated><id>http://localhost:4000/blog/electronics/-guide-to-led-strips</id><content type="html" xml:base="http://localhost:4000/blog/electronics/guide-to-led-strips.html"><![CDATA[<ol id="contents">
+  <li>
+    <h4 id="contents">Contents</h4>
+  </li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#the-basis-of-the-project">The Basis of the Project</a></li>
+  <li><a href="#the-3-common-types-of-led-strips">The Common Types of LED Strips</a>
+    <ul>
+      <li></li>
+      <li><a href="#2-pin-strips">2-Pin Strips</a></li>
+      <li><a href="#3-pin-strips">3-Pin Strips</a></li>
+      <li><a href="#4-pin-strips">4-Pin Strips</a></li>
+      <li><a href="#5-pin-strips">5-Pin Strips</a></li>
+    </ul>
+  </li>
+  <li><a href="#snipping-and-connecting">Snipping and Connecting</a></li>
+</ol>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>With the wide variety of LED strips that are available on the market, purchasing and populating your home with these lights can be tedious, let alone the operation of these lights. You first need to pick your ecosystem of products (Philips, Govee, TP-Link, etc.) unless you don’t mind downloading 5 different apps to operate them. Then, you need to buy the products, which, depending on which ecosystem you landed on, could chomp away at your budget.</p>
+
+<p>There is a movement among DIY enthusiasts and hackers that enables greater freedom when it comes to using and operating these products, which includes the usage of programs such as <a href="https://www.home-assistant.io/">Home Assistant</a>, <a href="https://kno.wled.ge/">WLED</a>, and some general craftiness.</p>
+
+<h2 id="the-basis-of-the-project">The Basis of the Project</h2>
+
+<p>The goal of this project is to unlock the freedom to control your lights how you please. This means not relying on companies and their apps of various levels of ‘functionality’ to control the lighting in your home. While regular light bulbs may be used in your home, they are more of a plug-and-play device. LED strips, on the other hand, are more customizable and have more creative use cases.</p>
+
+<p>The more you’re able to manipulate LED strips, the more power how have to form them into your vision. This article will show you exactly how to cut, connect, power, and program different types of LEDs.</p>
+
+<h2 id="the-common-types-of-led-strips">The Common Types of LED Strips</h2>
+
+<p>There are different types of LED strips, and I think these three are the common ones that are worth understanding. Note that strips come in different voltages as well:</p>
+
+<!-- Research -->
+
+<!-- The 3-pin strips use a common anode design, while the 4-pin strips use a common cathode design. -->
+<!-- research the waterproof 5pin led strips -->
+<!-- research 2-pin led strips -->
+
+<h3 id="2-pin-strips">2-Pin Strips</h3>
+
+<h4 id="pinout">Pinout</h4>
+
+<p class="reduceImage50"><img src="/img/blog/custom_led_strips/2-pin.jpg" alt="Pinout of 2-Pin LED Strip" title="Pinout of 2-Pin LED Strip" /></p>
+
+<h3 id="3-pin-strips">3-Pin Strips</h3>
+
+<p>3-Pin strips are pretty cool. They are known as <strong>Addressable RGB LED Strips</strong>, meaning that, you have control over the individual LEDs in the strip. Another common name for them is <strong>Neopixels</strong>. Their design allows you to animate the strips and light different sections in different colors. With this advanced functionality, Neopixels are generally the more pricey option. I wouldn’t recommend lighting up an entire room with Neopixels (unless you’re like, loaded or something), but rather, use them in a smaller environment, such as around the edges of your desk, or behind your TV unit.</p>
+
+<p><em>These are commonly available in 5v or 12v</em></p>
+
+<h4 id="pinout-1">Pinout</h4>
+
+<p class="reduceImage50"><img src="/img/blog/custom_led_strips/3-pin.jpg" alt="Pinout of 3-Pin LED Strip" title="Pinout of 3-Pin LED Strip" /></p>
+
+<h3 id="4-pin-strips">4-Pin Strips</h3>
+
+<p>4-Pin strips are the more common and affordable smart lighting option. Unlike the 3-Pin light strips, they are <strong>Non-Addressable RGB LED Strips</strong>. This means that they are (generally) controlled as one unit<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. Due to their affordability, these are more suited to light larger areas, such as entire rooms, underneath cabinets, inside wardrobes, etc.</p>
+
+<p><em>These are commonly available in 12v or 24v</em></p>
+
+<h4 id="pinout-2">Pinout</h4>
+
+<p class="reduceImage50"><img src="/img/blog/custom_led_strips/4-pin.jpg" alt="Pinout of 4-Pin LED Strip" title="Pinout of 4-Pin LED Strip" /></p>
+
+<h3 id="5-pin-strips">5-Pin Strips</h3>
+
+<p>There are different types of 5-pin strips, but the more common one is the RGBW strip, which has a separate LED for white light<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. There are other types of 5-pin LED strips, for example, there are some that include 2 extra channels to be able to daisy-chain the data lines, while the 2 extra channels are to run extra power to the LEDs. This would make sense for huge projects, or maybe outdoor LEDs alongside your driveway.</p>
+
+<h4 id="pinout-3">Pinout</h4>
+
+<p class="reduceImage50"><img src="/img/blog/custom_led_strips/5-pin.jpg" alt="Pinout of 5-Pin LED Strip" title="Pinout of 5-Pin LED Strip" /></p>
+
+<h2 id="snipping-and-connecting">Snipping and Connecting</h2>
+
+<p>Most strips have dotted lines you can cut across. These are safe areas for you to cut, where you won’t break any of the circuitry required to power and transfer data to the LEDs. The LED strips should be fitted so that they are optimally snipped to size, evenly lighting the desired area.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Some 4-pin LED strips are lit in zones, meaning that there is a level of addressability to them, for example, there is a model of TP-Link Casa Smart home strips that are zone-lit and have built-in animations. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>LED strips without the white diode mix all three colored diodes to create the illusion of white light. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Nasser Abumariam</name></author><category term="Electronics" /><summary type="html"><![CDATA[Contents Introduction The Basis of the Project The Common Types of LED Strips 2-Pin Strips 3-Pin Strips 4-Pin Strips 5-Pin Strips Snipping and Connecting]]></summary></entry><entry><title type="html">Using Tkinter to Create GUI Apps in Python</title><link href="http://localhost:4000/blog/software_development/tkinter-gui.html" rel="alternate" type="text/html" title="Using Tkinter to Create GUI Apps in Python" /><published>2024-01-08T04:41:37-06:00</published><updated>2024-01-08T04:41:37-06:00</updated><id>http://localhost:4000/blog/software_development/tkinter-gui</id><content type="html" xml:base="http://localhost:4000/blog/software_development/tkinter-gui.html"><![CDATA[<ol id="contents">
   <li>
     <h4 id="contents">Contents</h4>
   </li>

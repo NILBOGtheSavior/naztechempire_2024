@@ -4,6 +4,20 @@
     gap: 15px;
 }
 
+section a {
+    display: block;
+    margin-block: 10px;
+}
+
+section a h2 {
+    display: inline;
+}
+
+section a img {
+    height: 1.5em;
+    margin-left: 15px;
+}
+
 .tile {
     
     flex: 1;

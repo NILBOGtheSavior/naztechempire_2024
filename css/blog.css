@@ -91,12 +91,13 @@ h6 {
     width: 100%;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .otherArticles a {
     text-decoration: none;
-    flex: 1;
-    width: 200px;
+    flex: 1 0 calc(33.33% - 15px);
+    max-width: 100%;
 }
 
 .otherArticles a .thumbnail {
@@ -117,7 +118,7 @@ h6 {
 
 .otherArticles a h2 {
     width: 100%;
-    font-size: 1.25em;
+    font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -214,6 +215,13 @@ main section ol#contents li a:hover {
     .info {
         font-size: 0.75em;
     }
+    .otherArticles {
+        flex-direction: column;
+        a {
+            width: 100%;
+        }
+    }
+    
 }
 
 @media (min-width: 320px) {
@@ -222,6 +230,12 @@ main section ol#contents li a:hover {
     }
     .info {
         font-size: 0.8em;
+    }
+    .otherArticles {
+        flex-direction: column;
+        a {
+            width: 100%;
+        }
     }
 }
 
@@ -241,10 +255,22 @@ main section ol#contents li a:hover {
     section#blog_list {
         margin-inline: 10%;
     }
+    .otherArticles {
+        flex-direction: column;
+        a {
+            width: 100%;
+        }
+    }
 }
 
 @media (min-width: 760px) {
     section#blog_list {
         margin-inline: auto;
+    }
+    .otherArticles {
+        flex-direction: row;
+        a {
+            width: calc(33.33% - 15px);
+        }
     }
 }

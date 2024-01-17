@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Linux Series 101: Introduction to Linux | Naztech Empire</title>
+        <meta name="description" content="">
+                <meta charset="utf-8">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/js/menu.js"></script>
+        <script src="/js/code-copy.js"></script>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/code.css">
+        <link rel="stylesheet" href="/css/blog.css">
+        <script src="/js/contents.js"></script>
+        <style>
+            #hero_image {
+                background-image: url('/img/blog/linux_101/hero.jpg');
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slim">
+            <header class="blur">
+    <a href="/index.html" id="logo"><img src="/img/logo.svg" alt=""></a>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/software.html">Software</a>
+        <!-- <a href="/downloads.html">Downloads</a> -->
+        <!-- <a href="#">Videos</a> -->
+        <a href="/blog.html">Blog</a>
+    </nav>
+    <div id="account_info">
+        <small><a href="#">Login</a></small>
+        <a>|</a>
+        <small><a href="#">Sign Up</a></small>
+    </div>
+    <div id="hamburger" onclick="toggleMenu();">
+        <div class="bun"></div>
+        <div class="bun"></div>
+        <div class="bun"></div>
+    </div>
+</header>
+<div id="hamburger_menu" class="blur">
+    <a href="/index.html">Home</a>
+    <a href="/software.html">Software</a>
+    <!-- <a href="/downloads.html">Downloads</a> -->
+    <!-- <a href="#">Videos</a> -->
+    <a href="/blog.html">Blog</a>
+</div>
+        </div>
+
+        <main>
+            <div id="hero">
+                <div id="hero_image"></div>
+                <div id="hero_text">
+                    <h1>Linux Series 101: Introduction to Linux</h1>
+                </div>
+            </div>
+            <section>
+                <a href="/blog.html" id="back_link"><p>< Blog Posts</p></a>
+                <ol id="contents">
+  <li>
+    <h4 id="contents">Contents</h4>
+  </li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#the-drawbacks-of-windows">The Drawbacks of Windows</a></li>
+  <li><a href="#linus-father-of-linux-and-the-open-source-tribe">Linus, Father of Linux</a></li>
+  <li><a href="#linux-and-the-kernel">Linux and the Kernel</a></li>
+  <li><a href="#the-linux-terminal">The Linux Terminal</a></li>
+  <li><a href="#102-installation-and-dual-boot">102: Installation and Dual Boot</a></li>
+</ol>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>When it comes to operating systems, three popular ones stand out: Microsoft Windows, MacOS, and Linux. Windows is the most widely used, offering a variety of applications ranging from video games and graphics programs to office tools. While Windows boasts a diverse software ecosystem, it is not without its drawbacks.</p>
+
+<h2 id="the-drawbacks-of-windows">The Drawbacks of Windows</h2>
+
+<p>Windows is a visually appealing operating system, with major updates every few years. The design has improved significantly since the problematic Windows 8 update, which aimed at enhancing the tablet user experience. Windows 10 struck a balance between desktop and tablet versions, incorporating features from Windows 8 while addressing its issues. Windows 11 was a makeover with a few helpful widgets sprinkled here and there. Overall, a solid OS with many advantages.</p>
+
+<p>However, Windows has its drawbacks, particularly in terms of system efficiency. The operating system tends to be resource-intensive, with numerous background processes running and sometimes inefficient operations that strain the CPU. This causes issues such as lag, delayed loading times, and increased power consumption.</p>
+
+<p>Another significant disadvantage of Windows is the lack of freedom and customization options. Unlike open-source alternatives like Linux, Windows is a closed-source OS that limits user control. Windows users have fewer customization features and lack access to system files and configuration files.</p>
+
+<h2 id="linus-father-of-linux-and-penguin-loving-programmers">Linus, Father of Linux <em><small>(and penguin-loving programmers)</small></em></h2>
+
+<p class="inlineImage10"><img src="/img/blog/linux_101/001.png" alt="Tux the Mascot" title="Tux the Mascot" /></p>
+
+<p>Before I introduce Linux, I would like to introduce you to Linus Torvalds, a Finnish computer scientist. He is the magical being who created the <a href="#the-kernel">Linux Kernel</a> in 1991. He wanted to create an open-source alternative to Unix, another popular operating system. It started as a personal project, but after sharing it with the community, the collaborative effort developed it into the Operating System we know today.</p>
+
+<p>Over the years, Linux evolved into a powerful and versatile operating system kernel. It became a cornerstone for various Linux distributions (distros) like Ubuntu, Fedora, and Debian. It’s also the foundation for Android, powering a large share of mobile devices. Linux has become a dominant force in server environments, running a significant portion of servers worldwide. This website runs on a Linux box.</p>
+
+<h3 id="penguin-mascot">Penguin Mascot</h3>
+
+<p>When Linus Torvalds birthed the Linux kernel into the digital realm, he not only laid the foundation for a revolutionary operating system but also introduced a distinctive and endearing symbol: Tux the penguin. Adopted as the official mascot of the Linux kernel, Tux is not just a quirky choice; it encapsulates the very essence of the project’s ethos, its open and friendly nature.</p>
+
+<h2 id="linux-and-the-kernel">Linux and the Kernel</h2>
+
+<h3 id="linux">Linux</h3>
+
+<p>Linux is an open-source operating system. This means that users can access and modify its source code. This allows for multiple developments to occur. This ‘open’ philosophy fosters collaboration and innovation within the global developer community. An example of this is the development of several available Linux distributions (distros), including Ubuntu, Fedora, Debian, and CentOS. These distros package the kernel with additional software and a User Interface (UI).</p>
+
+<p>Linux boasts a multitude of impressive features that contribute to its remarkable flexibility, enabling it to seamlessly adapt to various purposes.</p>
+
+<ul>
+  <li>
+    <p><strong>Multitasking:</strong> Multitasking allows multiple processes to run simultaneously. This means that the system can be delegated to run, for example, a file server in one container, a media server in another, and still can complete day-to-day operations such as programming, text editing, web browsing, etc.</p>
+  </li>
+  <li>
+    <p><strong>Multiuser:</strong> The concept of multiuser functionality in Linux proves exceptionally valuable, particularly within a server environment. In this setting, the ability for multiple users to seamlessly interact with the system concurrently is a key advantage. This collaborative approach not only enhances operational efficiency but also facilitates a streamlined and cooperative workflow, making Linux an ideal choice for servers where simultaneous user interactions are a common and essential requirement.</p>
+  </li>
+  <li>
+    <p><strong>Stability and Reliability:</strong> Linux is known for its stability and reliability, making it a preferred choice for servers and critical systems. It often powers mission-critical infrastructure, including web servers and enterprise environments.</p>
+  </li>
+  <li>
+    <p><strong>Security Features:</strong> Linux has robust security features, including user privilege management, file permissions, and a firewall. Regular security updates and a proactive community contribute to a secure computing environment.</p>
+  </li>
+  <li>
+    <p><strong>Command Line Interface (CLI):</strong> Linux offers a powerful command-line interface, providing users with extensive control over system configuration and management. Many Linux enthusiasts prefer the CLI for its efficiency and flexibility.</p>
+  </li>
+</ul>
+
+<h3 id="the-kernel">The Kernel</h3>
+
+<p>The kernel is the core component responsible for managing hardware resources and providing essential services. If the hardware was the body of a computer, the kernel would be the soul. The Linux kernel follows a monolithic architecture, where the core functionalities are part of a single, large executable file. Device drivers, file systems, and system calls are integral parts of the monolithic kernel. Linux kernel developers prioritize hardware compatibility, aiming to support a wide range of devices. Regular updates include new drivers and enhancements to ensure compatibility with evolving hardware.</p>
+
+<p>The Linux kernel is developed collaboratively by a diverse community of developers worldwide. The development process involves regular releases, with contributors submitting patches and improvements. The Linux kernel undergoes continuous performance optimization to improve resource utilization and responsiveness. Kernel updates often include improvements in scheduling, memory management, and other critical areas.</p>
+
+<h2 id="the-linux-terminal">The Linux Terminal</h2>
+
+<p class="reduceImage50"><img src="/img/blog/linux_101/terminal.png" alt="The Linux terminal" title="The Linux terminal" /></p>
+
+<h3 id="command-line-interface-cli">Command-Line Interface (CLI)</h3>
+
+<p>The terminal provides a command-line interface, allowing users to interact with the operating system by typing commands. Operations include listing directories (or folders, for you basic <em>Windows</em> users), creating, deleting, copying, and moving files, and many more.
+<!-- To see more commands, check out [this]() post. -->
+Unlike graphical user interfaces (GUIs), the terminal relies on text-based input and output, providing a powerful and efficient way to control the system. The terminal is often associated with a shell, which is a command interpreter that interprets user commands and executes them.</p>
+
+<h4 id="bash">BASH</h4>
+
+<p>Bash, short for “Bourne Again SHell,” is a widely used command processor and scripting shell in Unix-like operating systems, including Linux. Users can create scripts by writing a series of commands that Bash can execute. Bash is an evolution of the original Bourne Shell (sh) developed by Stephen Bourne. It incorporates features from other shells, such as the C Shell (<code class="language-plaintext highlighter-rouge">csh</code>) and the Korn Shell (<code class="language-plaintext highlighter-rouge">ksh</code>). It has become the default shell for many Linux distributions and is widely adopted in Unix-like systems.</p>
+
+<p>Bash includes features like command-line editing, history, and job control, enhancing the user experience and productivity. It supports aliases, allowing users to create shorthand names for commands. Bash scripts are executed by interpreting the commands sequentially. Users can make scripts executable and run them like any other program.</p>
+
+<p>Users can access a wide range of system commands directly from the terminal, enabling precise control over system configuration and management. The terminal provides commands for navigating and manipulating the file system, making tasks such as file and directory creation, deletion, and navigation efficient.</p>
+
+<p>Many Linux distributions use the terminal for package management, allowing users to install, update, and remove software packages using command-line tools like <code class="language-plaintext highlighter-rouge">apt</code> or <code class="language-plaintext highlighter-rouge">yum</code>. The terminal is crucial for remote server administration through protocols like SSH (Secure Shell), enabling users to manage servers and systems from a distance.</p>
+
+<p>Users can customize the appearance and behavior of the terminal to suit their preferences, including color schemes, fonts, and keyboard shortcuts.</p>
+
+<h2 id="102-installation-and-dual-boot">102: Installation and Dual Boot</h2>
+
+<p>In the next article, I will go over the installation of Linux and dual-boot, including customization.</p>
+
+            </section>
+            <section>
+                <hr>
+                <div id="blog_info">
+                    <p><b>Published:</b> 01/15/24</p>
+                    <p><b>Author:</b> Nasser Abumariam</p>
+                </div>
+            </section>
+            <section>
+                <h2>Read more:</h2>
+                <div class="otherArticles">
+                    
+                    
+                    
+                        
+                    
+                        
+                            
+                            <a href="/blog/electronics/guide-to-led-strips.html">
+                                <div class="thumbnail"><img src="/img/blog/custom_led_strips/thumbnail.jpg" alt=""></div>
+                                <h2 class="blog_title">A Comprehensive Guide to LED Strips, Custom Soldering, and Programming</h2>
+                                
+                            </a>
+                                
+                            
+                        
+                    
+                        
+                            
+                            <a href="/blog/software_development/tkinter-gui.html">
+                                <div class="thumbnail"><img src="/img/blog/tkinter-gui/thumbnail.jpg" alt=""></div>
+                                <h2 class="blog_title">Using Tkinter to Create GUI Apps in Python</h2>
+                                
+                            </a>
+                                
+                            
+                        
+                    
+                        
+                            
+                            <a href="/blog/web_development/creating-this-website.html">
+                                <div class="thumbnail"><img src="/img/blog/creating_this_website/thumbnail.jpg" alt=""></div>
+                                <h2 class="blog_title">Streamlined Web Development: Embracing Jekyll for Content Management</h2>
+                                
+                            </a>
+                                
+                            
+                        
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer>
+    <div class="directories">
+        <span id="leg">
+            <p>Naztech Empire &copy; 2024</p>
+        </span>
+        <span>
+            <h4>Site Map</h4>
+            <a href="index.html"><p>Home</p></a>
+            <a href="software.html"><p>Software</p></a>
+            <!-- <a href="downloads.html"><p>Downloads</p></a> -->
+            <!-- <a href="#"><p>Videos</p></a> -->
+            <a href="blog.html"><p>Blog</p></a>
+        </span>
+        <span>
+            <h4>Social</h4>
+            <a href="https://www.instagram.com/naztechmedia/"><img src="/img/icons/icons8-instagram.svg" alt=""></a>
+            <a href="https://github.com/NILBOGtheSavior"><img src="/img/icons/icons8-github.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCFLmlQDTB47XnFYeJE_Pe4Q"><img src="/img/icons/icons8-youtube.svg" alt=""></a>
+            <small>
+                <a href="#"><p><u>Terms and Conditions</u></p></a>
+                <a href="#"><p><u>Privacy Policy</u></p></a>
+            </small>
+            
+        </span>
+    </div>
+</footer>
+        
+    </body>
+</html>

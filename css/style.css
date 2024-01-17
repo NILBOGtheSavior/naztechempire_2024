@@ -53,6 +53,10 @@ header div#account_info {
     justify-content: end;
 }
 
+header div#account_info a {
+    text-decoration: line-through;
+}
+
 #hamburger {
     height: 100% - 5px;
     aspect-ratio: 1/1;

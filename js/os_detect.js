@@ -16,6 +16,7 @@ function detectOS() {
     const icon = document.getElementById("os_icon");
     const os = detectOS();
     windows = '/img/icons/operating_systems/windows.png';
+    mac = '/img/icons/operating_systems/mac.png';
     linux = '/img/icons/operating_systems/linux.png';
     unknown = '/img/icons/operating_systems/unknown.png';
 
@@ -24,7 +25,7 @@ function detectOS() {
             icon.src = windows;
             break;
         case "Mac OS":
-            icon.src = unknown;
+            icon.src = mac;
             break;
         case "Linux":
             icon.src = linux;
@@ -37,19 +38,18 @@ function detectOS() {
   }
 
   // Function to handle file downloads based on OS
-  function downloadFile() {
+  function downloadFile(file) {
     const os = detectOS();
-    
     // You can customize the download link based on the detected OS
     switch (os) {
       case "Windows":
-        window.location.href = "download/windows-file.zip";
+        window.location.href = "/downloads/" + file;
         break;
       case "Mac OS":
-        window.location.href = "download/mac-file.dmg";
+        window.location.href = "/downloads/" + file;
         break;
       case "Linux":
-        window.location.href = "download/linux-file.tar.gz";
+        window.location.href = "/downloads/" + file;
         break;
       default:
         alert("Sorry, we couldn't detect your operating system. Please choose the appropriate download link manually.");
