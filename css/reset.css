@@ -25,3 +25,11 @@ a {
     text-decoration: none;
     color: black;
 }
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
+}
