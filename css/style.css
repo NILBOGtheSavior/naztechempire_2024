@@ -9,8 +9,9 @@ header {
     box-shadow: 0 0 5px black;
 }
 
-header #logo {
+header a#logo {
     margin: 10px;
+    width: 45px;
 }
 
 header #logo img {
@@ -42,6 +43,7 @@ nav, header div#account_info {
 nav a, header div#account_info a {
     color: white;
     transition: 500ms;
+    cursor: pointer;
 }
 
 nav a:hover, header div#account_info a:hover {
@@ -51,10 +53,6 @@ nav a:hover, header div#account_info a:hover {
 header div#account_info {
     flex: 1;
     justify-content: end;
-}
-
-header div#account_info a {
-    text-decoration: line-through;
 }
 
 #hamburger {
@@ -196,6 +194,166 @@ footer span a img:hover {
 #asciimation {
     font-family:'Courier New', Courier, monospace;
 }
+
+/* overlay section */
+
+#overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--accent);
+}
+
+#window {
+    position: sticky;
+    top: 150px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(15px);
+    width: 500px;
+    height: max-content;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    h2 {
+        padding: 10px 25px;
+    }
+    form {
+        padding: 10px 25px;
+        .formInput img {
+            height: 25px;
+            padding: 5px;
+        }
+        .formInput {
+            margin-block: 0 25px;
+            width: calc(100% - 20px);
+            display: flex;
+            border-bottom: solid 1px rgba(255, 255, 255, 0.75);
+        }
+        input {
+            width: 100%;
+            padding-inline: 10px;
+            padding-block: 0.5em;
+            font-size: 1.1em;
+            border: none;
+            color: white;
+            background-color: transparent;
+        }
+        :focus {
+            outline: none;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            p {
+                margin-inline: 5px;
+            }
+            hr {
+                flex: 1;
+                height: 0;
+            }
+        }
+    }
+    
+    button {
+        padding-block: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        margin-block: 15px;
+        margin-inline: auto;
+        display: block;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        transition: 500ms;
+        div {
+            width: 0;
+        }
+        img {
+            height: 1.5em;
+            padding-inline: 15px;
+        }
+    }
+    hr {
+        border-color: rgba(192, 192, 192, 0.5);
+    }
+    p {
+        text-align: center;
+    }
+    a {
+        right: 0;
+        color: white;
+        text-decoration: underline;
+    }
+    button#submit {
+        background-color: var(--accent50);
+        color: white;
+    }
+    button#submit:hover {
+        background-color: var(--accent);
+        color: white;
+    }
+    button#switch {
+        background-color: transparent;
+        color: #fff;
+        border: solid 1px rgba(192, 192, 192, 0.75);
+    }
+    button#switch:hover {
+        background-color: rgba(192, 192, 192, 0.5);
+        color: #fff;
+        border: solid 1px rgba(192, 192, 192, 0.75);
+    }
+    button.social-login {
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        p {
+            display: inline;
+            margin-block: 0;
+            margin-inline: auto;
+        }
+    }
+    button#google {
+        background-color: red;
+    }
+    button#google:hover {
+        background-color: #b30000;
+    }
+    button#facebook {
+        background-color: #4267b2;
+    }
+    button#facebook:hover {
+        background-color: #2d477a;
+    }
+
+    ::placeholder {
+        color: rgba(192, 192, 192, 0.5);
+        opacity: 1; /* Firefox */
+      }
+      
+      ::-ms-input-placeholder { /* Edge 12 -18 */
+        color: rgba(192, 192, 192, 0.5);
+      }
+}
+
 
 @media (max-width: 320px) {
     header nav, header div#account_info {

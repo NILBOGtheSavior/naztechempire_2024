@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Software | Naztech Empire</title>
+        <title><?php $username ?> | Naztech Empire</title>
         <meta name="description" content="">
                 <meta charset="utf-8">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/global.css">
         <link rel="stylesheet" href="/css/code.css">
-        <link rel="stylesheet" href="/css/software.css">
+        <script src="js/slideshow.js"></script>
     </head>
     <body>
         <div class="slim">
@@ -53,32 +53,11 @@
             <div id="hero">
                 <div id="hero_image"></div>
                 <div id="hero_text">
-                    <h1>The Software Page is Currently</h1>
-                    <h2>Under Developmemt</h2>
+                    <h1>Welcome, <?php $username ?></h1>
                 </div>
             </div>
             <section>
-                <div class="applications">
-                    
-                    <a href="/software/002-image-optimizer.html" style="background-image: url('/img/software/image_optimizer/hero.jpg');">
-                        <div class="app">
-                            <div class="info">
-                                <h4>Image Optimizer <!-- <h5>  </h5> --> </h4>
-                                <p>Locally optimize images for your website. Whether you prefer a one-at-a-time approach or need to process images in bulk, this tool ensures seamless optimization for improved website performance.</p>
-                            </div>
-                        </div>
-                    </a>
-                    
-                    <a href="/software/001-3d-printer-utility.html" style="background-image: url('/img/software/3d_printer_utility/hero.jpg');">
-                        <div class="app">
-                            <div class="info">
-                                <h4>3D Printer Utility <!-- <h5>  </h5> --> </h4>
-                                <p>Connect to your 3D printer via serial. This lightweight desktop application allows you to effortlessly send and receive G-Code commands, monitor your printer's status, and even capture timelapses of your prints.</p>
-                            </div>
-                        </div>
-                    </a>
-                    
-                </div>
+                <h2>Account Dashboard</h2>
             </section>
         </main>
         <footer>

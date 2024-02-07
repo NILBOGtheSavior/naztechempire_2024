@@ -9,6 +9,7 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="/js/menu.js"></script>
+        <script src="/js/overlay.js"></script>
         <script src="/js/code-copy.js"></script>
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/style.css">
@@ -25,18 +26,19 @@
     <body>
         <div class="slim">
             <header class="blur">
-    <a href="/index.html" id="logo"><img src="/img/logo.svg" alt=""></a>
+    <a href="/index.php" id="logo"><img src="/img/logo.svg" alt=""></a>
     <nav>
-        <a href="/index.html">Home</a>
+        <a href="/index.php">Home</a>
         <a href="/software.html">Software</a>
         <!-- <a href="/downloads.html">Downloads</a> -->
         <!-- <a href="#">Videos</a> -->
         <a href="/blog.html">Blog</a>
+        <a href="/services.html">Services</a>
     </nav>
     <div id="account_info">
-        <small><a href="#">Login</a></small>
+        <small><a onclick="openOverlay('login')">Login</a></small>
         <a>|</a>
-        <small><a href="#">Sign Up</a></small>
+        <small><a onclick="openOverlay('signup')">Sign Up</a></small>
     </div>
     <div id="hamburger" onclick="toggleMenu();">
         <div class="bun"></div>
@@ -45,12 +47,13 @@
     </div>
 </header>
 <div id="hamburger_menu" class="blur">
-    <a href="/index.html">Home</a>
+    <a href="/index.php">Home</a>
     <a href="/software.html">Software</a>
     <!-- <a href="/downloads.html">Downloads</a> -->
     <!-- <a href="#">Videos</a> -->
     <a href="/blog.html">Blog</a>
 </div>
+<section id="overlay"></section>
         </div>
 
         <main>
@@ -205,7 +208,7 @@ Unlike graphical user interfaces (GUIs), the terminal relies on text-based input
         </span>
         <span>
             <h4>Site Map</h4>
-            <a href="index.html"><p>Home</p></a>
+            <a href="index.php"><p>Home</p></a>
             <a href="software.html"><p>Software</p></a>
             <!-- <a href="downloads.html"><p>Downloads</p></a> -->
             <!-- <a href="#"><p>Videos</p></a> -->
