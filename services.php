@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>3D Printer Utility | Naztech Empire</title>
+        <title>Services | Naztech Empire</title>
         <meta name="description" content="">
                 <meta charset="utf-8">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -18,14 +18,8 @@
         <?php  
         include("scripts/login.php"); 
         ?>  
-        <link rel="stylesheet" href="/css/software.css">
-        <script src="/js/contents.js"></script>
-        <script src="/js/os_detect.js"></script>
-        <style>
-            #hero_image {
-                background-image: url('/img/software/3d_printer_utility/hero.jpg');
-            }
-        </style>
+        <link rel="stylesheet" href="/css/services.css">
+        <script src="js/slideshow.js"></script>
     </head>
     <body>
         <div class="slim">
@@ -70,46 +64,27 @@
 </div>
 <section id="overlay"></section>
         </div>
-
         <main>
             <div id="hero">
                 <div id="hero_image"></div>
                 <div id="hero_text">
-                    <h1>3D Printer Utility</h1>
-                    <h5>This Page is Currently Under Developmemt</h5>
+                    <h1>Services</h1>
                 </div>
             </div>
             <section>
-                <div class="appDetails">
-                    <img src="/img/software/3d_printer_utility/logo.png" alt="">
-                    <div class="description">
-                        <h2>3D Printer Utility</h2>
-                        <p class="tags">#3D_Printing</p>
-                        <hr>
-                        <h4>Description</h4>
-                        <p>Connect to your 3D printer via serial. This lightweight desktop application allows you to effortlessly send and receive G-Code commands, monitor your printer's status, and even capture timelapses of your prints.</p>
-                        <div class="downloads">
-                            <button class="versions">Other Versions</button>
-                            <button class="download" onclick="downloadFile('3D Printer Utility')">Download <img src="/img/icons/operating_systems/unknown.png" id="os_icon"></button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <p class="reduceImage50"><img src="/img/software/3d_printer_utility/001.png" alt="Snapshot of app" title="Snapshot of app" /></p>
-
-<video controls="">
-  <source src="/media/Test Print Trial 2.mp4" type="video/mp4" />
-  <source src="/media/Test Print Trial 2.mp4" type="video/ogg" />
-Your browser does not support the video tag.
-</video>
-
+                <p>Explore our services here and discover a diverse range of offerings, including web development and graphic design. Delve into our portfolio for a glimpse of the quality and creativity we bring to each project.</p>
+                <!-- partners section -->
             </section>
             <section>
-                <hr>
-                <div id="software_info">
-                    <p>#3D_Printing</p>
-                    <p><b>Version: </b>0.0.0.1</p>
+                <h2>Web Development</h2>
+                <div class="site" style="background-image: url(img/services/websites/jessies_food_truck.jpg);">
+                    <div class="container"><div></div></div>
+                    <div class="logo"></div>
                 </div>
+                <h2>Graphic Design</h2>
+
+                <h2>Technological Consultation</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam dicta! Non quas minima voluptatibus veniam, reiciendis provident velit amet consequatur omnis fuga. Modi vero, impedit veniam tempora maxime at optio. Nisi fugit, quibusdam minima corrupti tempora in modi alias.</p>
             </section>
         </main>
         <footer>

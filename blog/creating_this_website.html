@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Streamlined Web Development: Embracing Jekyll for Content Management | Naztech Empire</title>
         <meta name="description" content="">
                 <meta charset="utf-8">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -15,8 +14,10 @@
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/global.css">
         <link rel="stylesheet" href="/css/code.css">
+        <?php  
+        include("scripts/login.php"); 
+        ?>  
         <link rel="stylesheet" href="/css/blog.css">
-        <script src="/js/contents.js"></script>
         <style>
             #hero_image {
                 background-image: url('/img/blog/creating_this_website/hero.jpg');
@@ -24,38 +25,6 @@
         </style>
     </head>
     <body>
-        <div class="slim">
-            <header class="blur">
-    <a href="/index.php" id="logo"><img src="/img/logo.svg" alt=""></a>
-    <nav>
-        <a href="/index.php">Home</a>
-        <a href="/software.html">Software</a>
-        <!-- <a href="/downloads.html">Downloads</a> -->
-        <!-- <a href="#">Videos</a> -->
-        <a href="/blog.html">Blog</a>
-        <a href="/services.html">Services</a>
-    </nav>
-    <div id="account_info">
-        <small><a onclick="openOverlay('login')">Login</a></small>
-        <a>|</a>
-        <small><a onclick="openOverlay('signup')">Sign Up</a></small>
-    </div>
-    <div id="hamburger" onclick="toggleMenu();">
-        <div class="bun"></div>
-        <div class="bun"></div>
-        <div class="bun"></div>
-    </div>
-</header>
-<div id="hamburger_menu" class="blur">
-    <a href="/index.php">Home</a>
-    <a href="/software.html">Software</a>
-    <!-- <a href="/downloads.html">Downloads</a> -->
-    <!-- <a href="#">Videos</a> -->
-    <a href="/blog.html">Blog</a>
-</div>
-<section id="overlay"></section>
-        </div>
-
         <main>
             <div id="hero">
                 <div id="hero_image"></div>
@@ -156,7 +125,7 @@ date:   2023-12-27 02:59:19 -0600
                     
                         
                             
-                            <a href="/blog/linux/introduction-to-linux.html">
+                            <a href="/blog_view.php?post=linux_101" target="_PARENT" >
                                 <div class="thumbnail"><img src="/img/blog/linux_101/thumbnail.jpg" alt=""></div>
                                 <h2 class="blog_title">Linux Series 101: Introduction to Linux</h2>
                                 
@@ -167,8 +136,8 @@ date:   2023-12-27 02:59:19 -0600
                     
                         
                             
-                            <a href="/blog/software_development/tkinter-gui.html">
-                                <div class="thumbnail"><img src="/img/blog/tkinter-gui/thumbnail.jpg" alt=""></div>
+                            <a href="/blog_view.php?post=tkinter_gui" target="_PARENT" >
+                                <div class="thumbnail"><img src="/img/blog/tkinter_gui/thumbnail.jpg" alt=""></div>
                                 <h2 class="blog_title">Using Tkinter to Create GUI Apps in Python</h2>
                                 
                             </a>
@@ -181,33 +150,5 @@ date:   2023-12-27 02:59:19 -0600
                 </div>
             </section>
         </main>
-
-        <footer>
-    <div class="directories">
-        <span id="leg">
-            <p>Naztech Empire &copy; 2024</p>
-        </span>
-        <span>
-            <h4>Site Map</h4>
-            <a href="index.php"><p>Home</p></a>
-            <a href="software.html"><p>Software</p></a>
-            <!-- <a href="downloads.html"><p>Downloads</p></a> -->
-            <!-- <a href="#"><p>Videos</p></a> -->
-            <a href="blog.html"><p>Blog</p></a>
-        </span>
-        <span>
-            <h4>Social</h4>
-            <a href="https://www.instagram.com/naztechmedia/"><img src="/img/icons/icons8-instagram.svg" alt=""></a>
-            <a href="https://github.com/NILBOGtheSavior"><img src="/img/icons/icons8-github.svg" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCFLmlQDTB47XnFYeJE_Pe4Q"><img src="/img/icons/icons8-youtube.svg" alt=""></a>
-            <small>
-                <a href="#"><p><u>Terms and Conditions</u></p></a>
-                <a href="#"><p><u>Privacy Policy</u></p></a>
-            </small>
-            
-        </span>
-    </div>
-</footer>
-        
     </body>
 </html>

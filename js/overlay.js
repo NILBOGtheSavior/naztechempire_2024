@@ -78,12 +78,14 @@ function viewPassword() {
 
   function loadSignIn() {
     let overlay = document.getElementById('overlay');
+    console.log(valid);
     var code =
 `
 <div id="window">
     <div class="close" onclick="closeOverlay()">X</div>
     <h2>LOGIN</h2>
-    <form action="/scripts/login.php" method="POST">
+    <form method="POST">
+        <em id="error"></em>
         <div class="formInput">
             <img src="/img/icons/email.png" alt="">
             <input type="email" name="email" id="email" placeholder="Email">
@@ -106,7 +108,15 @@ function viewPassword() {
 </div>
     `
     overlay.innerHTML = code;
+    displayLoginError("Invalid Login");
   }
+
+function displayLoginError(message) {
+    let error = document.getElementById('error');
+    if (! valid) {
+        error.innerHTML = message;
+    }
+}
 
 function checkQueryParam() {
     let param = getQueryParam('account');

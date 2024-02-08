@@ -1,15 +1,33 @@
 <?php
+// $url = "/" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 
-require 'connect.php';
-foreach($_REQUEST as $key => $value) {
-if ($key == 'username') {
-    $username = $value;
+$valid = true;
+echo "<script>var valid = '$valid';</script>";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $sqli = require __DIR__ . '/connect.php';
+
+    $sql = sprintf("SELECT * FROM users
+                    WHERE email = '%s'",
+                    $mysqli->real_escape_string($_POST["email"]));
+
+    $result = $mysqli->query($sql);
+
+    $user = $result->fetch_assoc();
+
+    if ($user) {
+        if (password_verify($_POST["password"], $user["password"])) {
+            session_start();
+            $_SESSION["user_id"] = $user["id"];
+            $_SESSION["username"] = $user["username"];
+
+            header("Location: ../account.php");
+            exit();
+        }
+    }
+
+    $valid = false;
+    echo "<script>var valid = '$valid';</script>";
 }
-if ($key == 'email') {
-    $email = $value;
-}
-if ($key == 'password') {
-    $password = password_hash($value, PASSWORD_DEFAULT);
-}
-}
+
 ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Services | Naztech Empire</title>
+        <title>Blog | Naztech Empire</title>
         <meta name="description" content="">
                 <meta charset="utf-8">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -15,27 +15,36 @@
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/global.css">
         <link rel="stylesheet" href="/css/code.css">
-        <link rel="stylesheet" href="/css/services.css">
-        <script src="js/slideshow.js"></script>
+        <?php  
+        include("scripts/login.php"); 
+        ?>  
+        <link rel="stylesheet" href="css/blog.css">
+        <script src="js/blog.js"></script>
     </head>
     <body>
         <div class="slim">
-            <header class="blur">
+            <?php require 'scripts/session.php'; ?>
+<header class="blur">
     <a href="/index.php" id="logo"><img src="/img/logo.svg" alt=""></a>
     <nav>
         <a href="/index.php">Home</a>
-        <a href="/software.html">Software</a>
+        <a href="/software.php">Software</a>
         <!-- <a href="/downloads.html">Downloads</a> -->
         <!-- <a href="#">Videos</a> -->
-        <a href="/blog.html">Blog</a>
-        <a href="/services.html">Services</a>
+        <a href="/blog.php">Blog</a>
+        <a href="/services.php">Services</a>
     </nav>
     <div id="account_info">
-        <small><a onclick="openOverlay('login')">Login</a></small>
-        <a>|</a>
-        <small><a onclick="openOverlay('signup')">Sign Up</a></small>
+        <?php if ($_SESSION["username"]): ?>
+            <small><a href="account.php"><?= $_SESSION["username"]; ?></a></small>
+            <a onclick="toggleMenu('account_menu');"><img src="/img/icons/account.png" alt=""></a>
+        <?php else: ?>
+            <small><a onclick="openOverlay('login')">Login</a></small>
+            <a>|</a>
+            <small><a onclick="openOverlay('signup')">Sign Up</a></small>
+        <?php endif; ?>
     </div>
-    <div id="hamburger" onclick="toggleMenu();">
+    <div id="hamburger" onclick="toggleMenu('hamburger_menu');">
         <div class="bun"></div>
         <div class="bun"></div>
         <div class="bun"></div>
@@ -43,35 +52,20 @@
 </header>
 <div id="hamburger_menu" class="blur">
     <a href="/index.php">Home</a>
-    <a href="/software.html">Software</a>
+    <a href="/software.php">Software</a>
     <!-- <a href="/downloads.html">Downloads</a> -->
     <!-- <a href="#">Videos</a> -->
-    <a href="/blog.html">Blog</a>
+    <a href="/blog.php">Blog</a>
+    <a href="/services.php">Services</a>
+</div>
+<div id="account_menu" class="blur">
+    <a href="/account.php">My Account</a>
+    <a href="scripts/logout.php">Logout</a>
 </div>
 <section id="overlay"></section>
         </div>
         <main>
-            <div id="hero">
-                <div id="hero_image"></div>
-                <div id="hero_text">
-                    <h1>Services</h1>
-                </div>
-            </div>
-            <section>
-                <p>Explore our services here and discover a diverse range of offerings, including web development and graphic design. Delve into our portfolio for a glimpse of the quality and creativity we bring to each project.</p>
-                <!-- partners section -->
-            </section>
-            <section>
-                <h2>Web Development</h2>
-                <div class="site" style="background-image: url(img/services/websites/jessies_food_truck.jpg);">
-                    <div class="container"><div></div></div>
-                    <div class="logo"></div>
-                </div>
-                <h2>Graphic Design</h2>
-
-                <h2>Technological Consultation</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam dicta! Non quas minima voluptatibus veniam, reiciendis provident velit amet consequatur omnis fuga. Modi vero, impedit veniam tempora maxime at optio. Nisi fugit, quibusdam minima corrupti tempora in modi alias.</p>
-            </section>
+            <iframe src="" frameborder="0" id="blog_post"></iframe>
         </main>
         <footer>
     <div class="directories">
@@ -81,10 +75,11 @@
         <span>
             <h4>Site Map</h4>
             <a href="index.php"><p>Home</p></a>
-            <a href="software.html"><p>Software</p></a>
+            <a href="software.php"><p>Software</p></a>
             <!-- <a href="downloads.html"><p>Downloads</p></a> -->
             <!-- <a href="#"><p>Videos</p></a> -->
-            <a href="blog.html"><p>Blog</p></a>
+            <a href="blog.php"><p>Blog</p></a>
+            <a href="services.php"><p>Services</p></a>
         </span>
         <span>
             <h4>Social</h4>

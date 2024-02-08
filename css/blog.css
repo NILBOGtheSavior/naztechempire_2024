@@ -34,6 +34,13 @@ h6 {
     initial-value: 0%;
   }
 
+iframe#blog_post {
+    display: block;
+    width: 100%;
+    height: unset;
+    overflow-y: hidden;
+}
+
 .post {
     --grad:0%;
     transition:--grad 500ms;

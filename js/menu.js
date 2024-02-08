@@ -1,8 +1,9 @@
 let state = 0;
 
 
-function toggleMenu() {
-    menu = document.getElementById("hamburger_menu");
+function toggleMenu(opt) {
+    console.log(opt);
+    menu = document.getElementById(opt);
     if (state == 0) {
         menu.style.display = "flex";
         state = 1;

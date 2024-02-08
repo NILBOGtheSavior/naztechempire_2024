@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,27 +18,36 @@
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/global.css">
         <link rel="stylesheet" href="/css/code.css">
+        <?php  
+        include("scripts/login.php"); 
+        ?>  
         <link rel="stylesheet" href="css/index.css">
         <script src="js/slideshow.js"></script>
     </head>
     <body>
         <div class="slim">
-            <header class="blur">
+            <?php require 'scripts/session.php'; ?>
+<header class="blur">
     <a href="/index.php" id="logo"><img src="/img/logo.svg" alt=""></a>
     <nav>
         <a href="/index.php">Home</a>
-        <a href="/software.html">Software</a>
+        <a href="/software.php">Software</a>
         <!-- <a href="/downloads.html">Downloads</a> -->
         <!-- <a href="#">Videos</a> -->
-        <a href="/blog.html">Blog</a>
-        <a href="/services.html">Services</a>
+        <a href="/blog.php">Blog</a>
+        <a href="/services.php">Services</a>
     </nav>
     <div id="account_info">
-        <small><a onclick="openOverlay('login')">Login</a></small>
-        <a>|</a>
-        <small><a onclick="openOverlay('signup')">Sign Up</a></small>
+        <?php if ($_SESSION["username"]): ?>
+            <small><a href="account.php"><?= $_SESSION["username"]; ?></a></small>
+            <a onclick="toggleMenu('account_menu');"><img src="/img/icons/account.png" alt=""></a>
+        <?php else: ?>
+            <small><a onclick="openOverlay('login')">Login</a></small>
+            <a>|</a>
+            <small><a onclick="openOverlay('signup')">Sign Up</a></small>
+        <?php endif; ?>
     </div>
-    <div id="hamburger" onclick="toggleMenu();">
+    <div id="hamburger" onclick="toggleMenu('hamburger_menu');">
         <div class="bun"></div>
         <div class="bun"></div>
         <div class="bun"></div>
@@ -43,10 +55,15 @@
 </header>
 <div id="hamburger_menu" class="blur">
     <a href="/index.php">Home</a>
-    <a href="/software.html">Software</a>
+    <a href="/software.php">Software</a>
     <!-- <a href="/downloads.html">Downloads</a> -->
     <!-- <a href="#">Videos</a> -->
-    <a href="/blog.html">Blog</a>
+    <a href="/blog.php">Blog</a>
+    <a href="/services.php">Services</a>
+</div>
+<div id="account_menu" class="blur">
+    <a href="/account.php">My Account</a>
+    <a href="scripts/logout.php">Logout</a>
 </div>
 <section id="overlay"></section>
         </div>
@@ -127,21 +144,21 @@
                 <a href="/blog.html"><h2>Blog</h2><img src="/img/icons/link.png" alt=""></a>
                 <div class="blog">
                     
-                    <a href="/blog/linux/introduction-to-linux.html">
+                    <a href="/blog_view.php?post=linux_101">
                         <figure>
                             <div style="background-image: url('/img/blog/linux_101/thumbnail.jpg');"></div>
                             <figcaption>Linux Series 101: Introduction to Linux</figcaption>
                         </figure>
                     </a>
                     
-                    <a href="/blog/software_development/tkinter-gui.html">
+                    <a href="/blog_view.php?post=tkinter_gui">
                         <figure>
-                            <div style="background-image: url('/img/blog/tkinter-gui/thumbnail.jpg');"></div>
+                            <div style="background-image: url('/img/blog/tkinter_gui/thumbnail.jpg');"></div>
                             <figcaption>Using Tkinter to Create GUI Apps in Python</figcaption>
                         </figure>
                     </a>
                     
-                    <a href="/blog/web_development/creating-this-website.html">
+                    <a href="/blog_view.php?post=creating_this_website">
                         <figure>
                             <div style="background-image: url('/img/blog/creating_this_website/thumbnail.jpg');"></div>
                             <figcaption>Streamlined Web Development: Embracing Jekyll for Content Management</figcaption>
@@ -159,10 +176,11 @@
         <span>
             <h4>Site Map</h4>
             <a href="index.php"><p>Home</p></a>
-            <a href="software.html"><p>Software</p></a>
+            <a href="software.php"><p>Software</p></a>
             <!-- <a href="downloads.html"><p>Downloads</p></a> -->
             <!-- <a href="#"><p>Videos</p></a> -->
-            <a href="blog.html"><p>Blog</p></a>
+            <a href="blog.php"><p>Blog</p></a>
+            <a href="services.php"><p>Services</p></a>
         </span>
         <span>
             <h4>Social</h4>
