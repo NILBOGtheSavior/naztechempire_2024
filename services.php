@@ -79,7 +79,7 @@
             </section>
             <section>
                 <h2>Web Development</h2>
-                <a href="http://mamalulus.naztechempire.com/index.php" class="site" style="background-image: url(img/services/websites/jessies_food_truck.jpg);">
+                <a href="http://mamalulus.naztechempire.com/index.php" class="site" style="background-image: url(img/services/websites/mamalulus.png);">
                     <div class="container"><div></div></div>
                     <div class="logo"></div>
                 </a>

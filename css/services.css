@@ -1,4 +1,5 @@
 .site {
+    display: block;
     width: 100%;
     height: 200px;
     border-radius: 15px;
