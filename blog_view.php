@@ -11,6 +11,8 @@
         <script src="/js/menu.js"></script>
         <script src="/js/overlay.js"></script>
         <script src="/js/code-copy.js"></script>
+        <script src="/js/validate.min.js"></script>
+        <script src="/js/validator.js"></script>
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/global.css">

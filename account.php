@@ -18,6 +18,8 @@ require 'scripts/session.php';
         <script src="/js/menu.js"></script>
         <script src="/js/overlay.js"></script>
         <script src="/js/code-copy.js"></script>
+        <script src="/js/validate.min.js"></script>
+        <script src="/js/validator.js"></script>
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/global.css">
@@ -82,7 +84,23 @@ require 'scripts/session.php';
                 </div>
             </div>
             <section>
-                <h2>Account Dashboard</h2>
+                <?php if ($_SESSION["username"]): ?>
+                    <h2>Account Dashboard</h2>
+                    <a href="" class="hyper">Account Details</a>
+                    <?php
+                    $mysqli = require 'scripts/connect.php';
+                    $sql = "SELECT id, username, email FROM users;";
+                    if ($result->num_rows > 0) {
+                        // output data of each row
+                        while($row = $result->fetch_assoc()) {
+                          echo "id: " . $row["id"]. " - Name: " . $row["username"]. "<br>";
+                        }
+                      } else {
+                        echo "<p>0 results</p>";
+                      } 
+                    ?>
+                <?php endif; ?>
+                
             </section>
         </main>
         <footer>

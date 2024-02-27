@@ -85,7 +85,7 @@ function viewPassword() {
     <div class="close" onclick="closeOverlay()">X</div>
     <h2>LOGIN</h2>
     <form method="POST">
-        <em id="error"></em>
+        <em><h4 id="error"></h4></em>
         <div class="formInput">
             <img src="/img/icons/email.png" alt="">
             <input type="email" name="email" id="email" placeholder="Email">
@@ -96,9 +96,11 @@ function viewPassword() {
             <img src="/img/icons/password-show.png" alt="" id="showPassword" onclick="viewPassword()">
         </div>
         <a href="#">Forgot Password?</a>
-        <button type="submit" id="submit">LOGIN</button>
+        <button type="submit" id="submit">
+        <p>LOGIN</>
+        </button>
         <p>Don't Have An Account?</p>
-        <button type="submit" id="switch" onclick="openOverlay('signup')">SIGN UP</button>
+        <button type="submit" id="switch" onclick="openOverlay('signup')"><p>SIGN UP</p></button>
         <div class="divider">
             <hr><p>OR</p><hr>
         </div>
@@ -112,9 +114,11 @@ function viewPassword() {
   }
 
 function displayLoginError(message) {
-    let error = document.getElementById('error');
+    let error = document.getElementsByTagName('em')[0];
+    let text = document.getElementById('error');
     if (! valid) {
-        error.innerHTML = message;
+        error.style.display = 'block';
+        text.innerHTML = message;
     }
 }
 

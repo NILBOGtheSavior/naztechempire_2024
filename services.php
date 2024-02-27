@@ -11,6 +11,8 @@
         <script src="/js/menu.js"></script>
         <script src="/js/overlay.js"></script>
         <script src="/js/code-copy.js"></script>
+        <script src="/js/validate.min.js"></script>
+        <script src="/js/validator.js"></script>
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/global.css">
@@ -77,10 +79,10 @@
             </section>
             <section>
                 <h2>Web Development</h2>
-                <div class="site" style="background-image: url(img/services/websites/jessies_food_truck.jpg);">
+                <a href="http://mamalulus.naztechempire.com/index.php" class="site" style="background-image: url(img/services/websites/jessies_food_truck.jpg);">
                     <div class="container"><div></div></div>
                     <div class="logo"></div>
-                </div>
+                </a>
                 <h2>Graphic Design</h2>
 
                 <h2>Technological Consultation</h2>
